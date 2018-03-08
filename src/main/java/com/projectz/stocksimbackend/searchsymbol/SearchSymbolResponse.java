@@ -2,6 +2,7 @@ package com.projectz.stocksimbackend.searchsymbol;
 
 public class SearchSymbolResponse {
   private String symbol;
+  private String data;
 
   public String getSymbol() {
     return symbol;
@@ -11,13 +12,11 @@ public class SearchSymbolResponse {
     this.symbol = symbol;
   }
 
-  public String getCanonicalName() {
-    return canonicalName;
+  public String getData() {
+    return data;
   }
 
-  public void setCanonicalName(String canonicalName) {
-    this.canonicalName = canonicalName;
+  public void setData(String data) {
+    this.data = data;
   }
-
-  private String canonicalName;
 }
