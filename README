@@ -1,0 +1,6 @@
+To bring up the server on cli:
+    ./mvnw spring-boot:run
+To run the server in intellij:
+    Run -> Edit Configuration -> + -> Maven -> Give it a name (say "server-run") -> Put "spring-boot:run" on Command Line -> OK
+    Run -> Debug -> server-run
+    
