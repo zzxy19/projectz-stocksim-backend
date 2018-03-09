@@ -1,5 +1,8 @@
 package com.projectz.stocksimbackend.common.util;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -10,7 +13,8 @@ import java.util.Map;
 
 public class HttpsRequestBuilder {
   private URL requestUrl;
-  public String url;
+
+  private static final Logger logger = LoggerFactory.getLogger(HttpsRequestBuilder.class);
 
   public HttpsRequestBuilder(String domain, String request, Map<String, String> params) {
     StringBuilder requestBuilder = new StringBuilder();
@@ -31,9 +35,10 @@ public class HttpsRequestBuilder {
         }
       }
     }
-    url = requestBuilder.toString();
+    String url = requestBuilder.toString();
+    logger.info("Http request built: " + url);
     try {
-      requestUrl = new URL(requestBuilder.toString());
+      requestUrl = new URL(url);
     } catch (MalformedURLException ex) {
       // This should not happen.
       throw new IllegalStateException(ex);
