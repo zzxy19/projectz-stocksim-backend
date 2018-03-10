@@ -28,3 +28,15 @@ To connect to RDS from EC2:
         sudo service postgresql initdb
     Connect to RDS via psql
         psql --host=$HOST --username=$USERNAME --dbname=$DB
+    Ingest data to RDS from EC2
+        Trim some columns to only the needed ones (use Google sheet)
+        Replace n/a with empty:
+            sed -i 's/,n\/a/,/g' companylist_amex.csv
+        psql --host=$HOST --username=$USERNAME --dbname=$DB -c "\copy company_dev (symbol,name,ipoyear,sector,industry)  from 'companylist/companylist_nyse.csv' CSV"
+        The data from three tables contain duplicates, which causes errors. Do this:
+            Create a temp table 'playground', ingest data into playground first
+            Then run this query:
+                INSERT INTO company_dev
+                select *
+                from playground
+                on conflict do nothing;
