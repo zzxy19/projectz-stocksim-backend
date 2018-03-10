@@ -13,3 +13,8 @@ To start a server on AWS EC2 AMI instance:
         sudo yum install -y jdk-8u141-linux-x64.rpm
     Verify Java version:
         java -version
+    Set JAVA_HOME env var:
+        export JAVA_HOME=/usr/java/default/
+    Bring up the server:
+        # Running this command keeps the server alive after you c^C and close SSH connection
+        nohup ./mvnw spring-boot:run &
