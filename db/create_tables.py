@@ -6,7 +6,7 @@ CREATE_TABLE_QUERY = """
     Name        varchar(100) NOT NULL,
     IPOyear     integer,
     Sector      varchar(100),
-    Industry    varchar(100),
+    Industry    varchar(100)
   );
 """
 
@@ -25,7 +25,7 @@ DELETE_QUERY = """
 def doQuery(conn, query) :
   cur = conn.cursor()
   cur.execute(query)
-  for row in cur.fetchall() :
+  for row in cur.fetchall():
     print row
 
 hostname='projectz-stocksim-db.chsesjujswlg.us-east-2.rds.amazonaws.com'
@@ -34,4 +34,4 @@ password='xiezihan19'
 database='stocksim_zbase'
 
 myConnection = psycopg2.connect(host=hostname, user=username, password=password, dbname=database)
-doQuery(myConnection, CREATE_TABLE_QUERY)
+#doQuery(myConnection, CREATE_TABLE_QUERY)

@@ -18,3 +18,13 @@ To start a server on AWS EC2 AMI instance:
     Bring up the server:
         # Running this command keeps the server alive after you c^C and close SSH connection
         nohup ./mvnw spring-boot:run &
+To connect to RDS from EC2:
+    Set RDS rule to only allow traffic from same VPS (put them in the same VPS!)
+    Install psql on EC2:
+        connect to EC2 via SSH
+        # I'm sure something here are not necessary
+        sudo yum install postgresql postgresql-server postgresql-devel postgresql-contrib postgresql-docs
+        # This is probably not necessary
+        sudo service postgresql initdb
+    Connect to RDS via psql
+        psql --host=$HOST --username=$USERNAME --dbname=$DB
