@@ -1,355 +1,354 @@
-Symbol,Name,IPOyear,Sector,Industry
-XXII,"22nd Century Group, Inc",n/a,Consumer Non-Durables,Farming/Seeds/Milling
-FAX,Aberdeen Asia-Pacific Income Fund Inc,1986,n/a,n/a
-IAF,Aberdeen Australia Equity Fund Inc,n/a,n/a,n/a
-CH,"Aberdeen Chile Fund, Inc.",n/a,n/a,n/a
-ABE           ,Aberdeen Emerging Markets Smaller Company Opportunities Fund I,n/a,n/a,n/a
-FCO,"Aberdeen Global Income Fund, Inc.",1992,n/a,n/a
-IF,"Aberdeen Indonesia Fund, Inc.",1990,n/a,n/a
-ISL,"Aberdeen Israel Fund, Inc.",1992,n/a,n/a
+XXII,"22nd Century Group, Inc",,Consumer Non-Durables,Farming/Seeds/Milling
+FAX,Aberdeen Asia-Pacific Income Fund Inc,1986,,
+IAF,Aberdeen Australia Equity Fund Inc,,,
+CH,"Aberdeen Chile Fund, Inc.",,,
+ABE           ,Aberdeen Emerging Markets Smaller Company Opportunities Fund I,,,
+FCO,"Aberdeen Global Income Fund, Inc.",1992,,
+IF,"Aberdeen Indonesia Fund, Inc.",1990,,
+ISL,"Aberdeen Israel Fund, Inc.",1992,,
 ACU,Acme United Corporation.,1988,Capital Goods,Industrial Machinery/Components
-ATNM,"Actinium Pharmaceuticals, Inc.",n/a,Health Care,Major Pharmaceuticals
-AE,"Adams Resources & Energy, Inc.",n/a,Energy,Oil Refining/Marketing
-ACY,AeroCentury Corp.,n/a,Technology,Diversified Commercial Services
-AIRI,Air Industries Group,n/a,Capital Goods,Military/Government/Technical
-AXU,Alexco Resource Corp,n/a,Basic Industries,Precious Metals
+ATNM,"Actinium Pharmaceuticals, Inc.",,Health Care,Major Pharmaceuticals
+AE,"Adams Resources & Energy, Inc.",,Energy,Oil Refining/Marketing
+ACY,AeroCentury Corp.,,Technology,Diversified Commercial Services
+AIRI,Air Industries Group,,Capital Goods,Military/Government/Technical
+AXU,Alexco Resource Corp,,Basic Industries,Precious Metals
 ALO,Alio Gold Inc.,2011,Basic Industries,Precious Metals
 AAU,"Almaden Minerals, Ltd.",2015,Basic Industries,Precious Metals
-APT,"Alpha Pro Tech, Ltd.",n/a,Health Care,Industrial Specialties
-AAMC,Altisource Asset Management Corp,n/a,Finance,Real Estate
-DIT,AMCON Distributing Company,n/a,Consumer Non-Durables,Food Distributors
-ALN,American Lorain Corporation,n/a,Consumer Non-Durables,Packaged Foods
-AMS,American Shared Hospital Services,n/a,Health Care,Medical Specialities
+APT,"Alpha Pro Tech, Ltd.",,Health Care,Industrial Specialties
+AAMC,Altisource Asset Management Corp,,Finance,Real Estate
+DIT,AMCON Distributing Company,,Consumer Non-Durables,Food Distributors
+ALN,American Lorain Corporation,,Consumer Non-Durables,Packaged Foods
+AMS,American Shared Hospital Services,,Health Care,Medical Specialities
 USAS,Americas Silver Corporation,2017,Basic Industries,Precious Metals
-AMPE,"Ampio Pharmaceuticals, Inc.",n/a,Health Care,Major Pharmaceuticals
-APHB,AmpliPhi Biosciences Corporation,n/a,Health Care,Biotechnology: Biological Products (No Diagnostic Substances)
-ARNC^,Arconic Inc.,n/a,n/a,n/a
-AKG,Asanko Gold Inc.,n/a,Basic Industries,Mining & Quarrying of Nonmetallic Minerals (No Fuels)
+AMPE,"Ampio Pharmaceuticals, Inc.",,Health Care,Major Pharmaceuticals
+APHB,AmpliPhi Biosciences Corporation,,Health Care,Biotechnology: Biological Products (No Diagnostic Substances)
+ARNC^,Arconic Inc.,,,
+AKG,Asanko Gold Inc.,,Basic Industries,Mining & Quarrying of Nonmetallic Minerals (No Fuels)
 AINC,Ashford Inc.,2014,Consumer Services,Professional Services
-ASB.WS,Associated Banc-Corp,n/a,n/a,n/a
-AST,"Asterias Biotherapeutics, Inc.",n/a,Health Care,Biotechnology: Biological Products (No Diagnostic Substances)
-AUG,Auryn Resources Inc.,n/a,Basic Industries,Precious Metals
-AWX,Avalon Holdings Corporation,n/a,Public Utilities,Environmental Services
-ASM,Avino Silver,n/a,Basic Industries,Precious Metals
-BTG,B2Gold Corp,n/a,Basic Industries,Precious Metals
-BTN,"Ballantyne Strong, Inc",n/a,Miscellaneous,Industrial Machinery/Components
-BKJ,"Bancorp of New Jersey, Inc",n/a,Finance,Major Banks
-BCV,Bancroft Fund Limited,n/a,n/a,n/a
-BCV^A,Bancroft Fund Limited,n/a,n/a,n/a
-BHB,"Bar Harbor Bankshares, Inc.",n/a,Finance,Major Banks
-BRN,"Barnwell Industries, Inc.",n/a,Energy,Oil & Gas Production
-BGSF,BG Staffing Inc,n/a,Technology,Professional Services
+ASB.WS,Associated Banc-Corp,,,
+AST,"Asterias Biotherapeutics, Inc.",,Health Care,Biotechnology: Biological Products (No Diagnostic Substances)
+AUG,Auryn Resources Inc.,,Basic Industries,Precious Metals
+AWX,Avalon Holdings Corporation,,Public Utilities,Environmental Services
+ASM,Avino Silver,,Basic Industries,Precious Metals
+BTG,B2Gold Corp,,Basic Industries,Precious Metals
+BTN,"Ballantyne Strong, Inc",,Miscellaneous,Industrial Machinery/Components
+BKJ,"Bancorp of New Jersey, Inc",,Finance,Major Banks
+BCV,Bancroft Fund Limited,,,
+BCV^A,Bancroft Fund Limited,,,
+BHB,"Bar Harbor Bankshares, Inc.",,Finance,Major Banks
+BRN,"Barnwell Industries, Inc.",,Energy,Oil & Gas Production
+BGSF,BG Staffing Inc,,Technology,Professional Services
 BPMX,BioPharmX Corporation,2015,Health Care,Major Pharmaceuticals
-BTX,"BioTime, Inc.",n/a,Health Care,Biotechnology: Biological Products (No Diagnostic Substances)
-BTX.WS,"BioTime, Inc.",n/a,n/a,n/a
-BGI,Birks Group Inc.,n/a,Consumer Services,Consumer Specialties
-BZM,BlackRock Maryland Municipal Bond Trust,2002,n/a,n/a
-MHE,BlackRock Massachusetts Tax-Exempt Trust,1993,n/a,n/a
-BLE,BlackRock Municipal Income Trust II,2002,n/a,n/a
-BLJ,Blackrock New Jersey Municipal Bond Trust,2002,n/a,n/a
-BFY,BlackRock New York Municipal Income Trust II,2002,n/a,n/a
-BHV,BlackRock Virginia Municipal Bond Trust,2002,n/a,n/a
-BDR,"Blonder Tongue Laboratories, Inc.",n/a,Technology,Radio And Television Broadcasting And Communications Equipment
+BTX,"BioTime, Inc.",,Health Care,Biotechnology: Biological Products (No Diagnostic Substances)
+BTX.WS,"BioTime, Inc.",,,
+BGI,Birks Group Inc.,,Consumer Services,Consumer Specialties
+BZM,BlackRock Maryland Municipal Bond Trust,2002,,
+MHE,BlackRock Massachusetts Tax-Exempt Trust,1993,,
+BLE,BlackRock Municipal Income Trust II,2002,,
+BLJ,Blackrock New Jersey Municipal Bond Trust,2002,,
+BFY,BlackRock New York Municipal Income Trust II,2002,,
+BHV,BlackRock Virginia Municipal Bond Trust,2002,,
+BDR,"Blonder Tongue Laboratories, Inc.",,Technology,Radio And Television Broadcasting And Communications Equipment
 BRG,"Bluerock Residential Growth REIT, Inc.",2014,Consumer Services,Real Estate Investment Trusts
-BRG^A,"Bluerock Residential Growth REIT, Inc.",n/a,n/a,n/a
-BRG^C,"Bluerock Residential Growth REIT, Inc.",n/a,n/a,n/a
-BRG^D,"Bluerock Residential Growth REIT, Inc.",n/a,n/a,n/a
-BVX,Bovie Medical Corporation,n/a,Health Care,Medical/Dental Instruments
-BWL.A,"Bowl America, Inc.",n/a,n/a,n/a
-CMCL,Caledonia Mining Corporation Plc,n/a,Basic Industries,Precious Metals
-CEI,"Camber Energy, Inc.",n/a,Energy,Oil & Gas Production
-CANF,Can-Fite Biopharma Ltd,n/a,Health Care,Major Pharmaceuticals
+BRG^A,"Bluerock Residential Growth REIT, Inc.",,,
+BRG^C,"Bluerock Residential Growth REIT, Inc.",,,
+BRG^D,"Bluerock Residential Growth REIT, Inc.",,,
+BVX,Bovie Medical Corporation,,Health Care,Medical/Dental Instruments
+BWL.A,"Bowl America, Inc.",,,
+CMCL,Caledonia Mining Corporation Plc,,Basic Industries,Precious Metals
+CEI,"Camber Energy, Inc.",,Energy,Oil & Gas Production
+CANF,Can-Fite Biopharma Ltd,,Health Care,Major Pharmaceuticals
 ROX,"Castle Brands, Inc.",2006,Consumer Non-Durables,Beverages (Production/Distribution)
-CAW,"CCA Industries, Inc.",n/a,Consumer Non-Durables,Package Goods/Cosmetics
-CVM,Cel-Sci Corporation,n/a,Health Care,Biotechnology: Biological Products (No Diagnostic Substances)
-CVM.WS,Cel-Sci Corporation,n/a,n/a,n/a
-CET,Central Securities Corporation,n/a,n/a,n/a
+CAW,"CCA Industries, Inc.",,Consumer Non-Durables,Package Goods/Cosmetics
+CVM,Cel-Sci Corporation,,Health Care,Biotechnology: Biological Products (No Diagnostic Substances)
+CVM.WS,Cel-Sci Corporation,,,
+CET,Central Securities Corporation,,,
 LEU,Centrus Energy Corp.,2014,Basic Industries,Mining & Quarrying of Nonmetallic Minerals (No Fuels)
-CCF,Chase Corporation,n/a,Consumer Durables,Building Products
+CCF,Chase Corporation,,Consumer Durables,Building Products
 CQH,"Cheniere Energy Partners LP Holdings, LLC",2013,Public Utilities,Oil/Gas Transmission
 CQP,"Cheniere Energy Partners, LP",2007,Public Utilities,Oil/Gas Transmission
-LNG,"Cheniere Energy, Inc.",n/a,Public Utilities,Oil/Gas Transmission
-CVR,Chicago Rivet & Machine Co.,n/a,Technology,Industrial Machinery/Components
-CPHI,"China Pharma Holdings, Inc.",n/a,Health Care,Major Pharmaceuticals
-CISN.WS,Cision Ltd.,n/a,n/a,n/a
-CKX,"CKX Lands, Inc.",n/a,Energy,Oil & Gas Production
-GLV,Clough Global Dividend and Income Fund,2004,n/a,n/a
-GLQ,Clough Global Equity Fund,2005,n/a,n/a
-GLO,Clough Global Opportunities Fund,2006,n/a,n/a
-COHN,Cohen & Company Inc.,n/a,Finance,Investment Bankers/Brokers/Service
-MOC,Command Security Corporation,n/a,Consumer Services,Diversified Commercial Services
+LNG,"Cheniere Energy, Inc.",,Public Utilities,Oil/Gas Transmission
+CVR,Chicago Rivet & Machine Co.,,Technology,Industrial Machinery/Components
+CPHI,"China Pharma Holdings, Inc.",,Health Care,Major Pharmaceuticals
+CISN.WS,Cision Ltd.,,,
+CKX,"CKX Lands, Inc.",,Energy,Oil & Gas Production
+GLV,Clough Global Dividend and Income Fund,2004,,
+GLQ,Clough Global Equity Fund,2005,,
+GLO,Clough Global Opportunities Fund,2006,,
+COHN,Cohen & Company Inc.,,Finance,Investment Bankers/Brokers/Service
+MOC,Command Security Corporation,,Consumer Services,Diversified Commercial Services
 CIX,CompX International Inc.,1998,Capital Goods,Industrial Machinery/Components
-LODE,"Comstock Mining, Inc.",n/a,Basic Industries,Precious Metals
-CDOR,"Condor Hospitality Trust, Inc.",n/a,Consumer Services,Real Estate Investment Trusts
-CTO,Consolidated-Tomoka Land Co.,n/a,Finance,Real Estate
-MCF,Contango Oil & Gas Company,n/a,Energy,Oil & Gas Production
-CUO,Continental Materials Corporation,n/a,Capital Goods,Building Materials
-CMT,Core Molding Technologies Inc,n/a,Consumer Non-Durables,Plastic Products
+LODE,"Comstock Mining, Inc.",,Basic Industries,Precious Metals
+CDOR,"Condor Hospitality Trust, Inc.",,Consumer Services,Real Estate Investment Trusts
+CTO,Consolidated-Tomoka Land Co.,,Finance,Real Estate
+MCF,Contango Oil & Gas Company,,Energy,Oil & Gas Production
+CUO,Continental Materials Corporation,,Capital Goods,Building Materials
+CMT,Core Molding Technologies Inc,,Consumer Non-Durables,Plastic Products
 CVRS,"Corindus Vascular Robotics, Inc.",2015,Health Care,Medical/Dental Instruments
-CRMD,CorMedix Inc,n/a,Health Care,Major Pharmaceuticals
-CRF,"Cornerstone Strategic Return Fund, Inc. (The)",n/a,n/a,n/a
-CLM,"Cornerstone Strategic Value Fund, Inc.",1987,n/a,n/a
-CVU,"CPI Aerostructures, Inc.",n/a,Capital Goods,Military/Government/Technical
-CIK,"Credit Suisse Asset Management Income Fund, Inc.",n/a,n/a,n/a
-DHY,Credit Suisse High Yield Bond Fund,1998,n/a,n/a
+CRMD,CorMedix Inc,,Health Care,Major Pharmaceuticals
+CRF,"Cornerstone Strategic Return Fund, Inc. (The)",,,
+CLM,"Cornerstone Strategic Value Fund, Inc.",1987,,
+CVU,"CPI Aerostructures, Inc.",,Capital Goods,Military/Government/Technical
+CIK,"Credit Suisse Asset Management Income Fund, Inc.",,,
+DHY,Credit Suisse High Yield Bond Fund,1998,,
 CRHM,CRH Medical Corporation,2015,Health Care,Medical/Dental Instruments
-CRVP,"Crystal Rock Holdings, Inc.",n/a,Consumer Non-Durables,Food Distributors
+CRVP,"Crystal Rock Holdings, Inc.",,Consumer Non-Durables,Food Distributors
 CTEK,"CynergisTek, Inc.",2017,Miscellaneous,Business Services
-DXR,Daxor Corporation,n/a,Health Care,Medical/Dental Instruments
-VCF,"Delaware Investments Colorado Municipal Income Fund, Inc",1993,n/a,n/a
-VFL,Delaware Investments Florida Insured Municipal Income Fund,1993,n/a,n/a
-VMM,"Delaware Investments Minnesota Municipal Income Fund II, Inc.",1993,n/a,n/a
-DLA,"Delta Apparel, Inc.",n/a,Consumer Non-Durables,Apparel
-DNN,Denison Mine Corp,n/a,Basic Industries,Precious Metals
-DGSE,"DGSE Companies, Inc.",n/a,Consumer Services,Consumer Specialties
-DSS,"Document Security Systems, Inc.",n/a,Consumer Durables,Containers/Packaging
-DPW,"DPW Holdings, Inc.",n/a,Capital Goods,Industrial Machinery/Components
-DMF,"Dreyfus Municipal Income, Inc.",1988,n/a,n/a
-DXF,Dunxin Financial Holdings Limited,n/a,n/a,n/a
-GRF,"Eagle Capital Growth Fund, Inc.",n/a,n/a,n/a
-EVM,Eaton Vance California Municipal Bond Fund,2002,n/a,n/a
-EIA,Eaton Vance California Municipal Bond Fund II,2002,n/a,n/a
-CEV,Eaton Vance California Municipal Income Trust,1999,n/a,n/a
-EVV,Eaton Vance Limited Duration Income Fund,2003,n/a,n/a
-MAB,Eaton Vance Massachusetts Municipal Bond Fund,2002,n/a,n/a
-MMV,Eaton Vance Massachusetts Municipal Income Trust,1999,n/a,n/a
-MIW,Eaton Vance Michigan Municipal Bond Fund,2002,n/a,n/a
-EMI,Eaton Vance Michigan Municipal Income Trust,1999,n/a,n/a
-EIM,Eaton Vance Municipal Bond Fund,2002,n/a,n/a
-EIV,Eaton Vance Municipal Bond Fund II,2002,n/a,n/a
-EMJ,Eaton Vance New Jersey Municipal Bond Fund,2002,n/a,n/a
-EVJ,Eaton Vance New Jersey Municipal Income Trust,1999,n/a,n/a
-ENX,Eaton Vance New York Municipal Bond Fund,2002,n/a,n/a
-NYH,Eaton Vance New York Municipal Bond Fund II,2002,n/a,n/a
-EVY,Eaton Vance New York Municipal Income Trust,1999,n/a,n/a
-EIO,Eaton Vance Ohio Municipal Bond Fund,2002,n/a,n/a
-EVO,Eaton Vance Ohio Municipal Income Trust,1999,n/a,n/a
-EIP,Eaton Vance Pennsylvania Municipal Bond Fund,2002,n/a,n/a
-EVP,Eaton Vance Pennsylvania Municipal Income Trust,1999,n/a,n/a
+DXR,Daxor Corporation,,Health Care,Medical/Dental Instruments
+VCF,"Delaware Investments Colorado Municipal Income Fund, Inc",1993,,
+VFL,Delaware Investments Florida Insured Municipal Income Fund,1993,,
+VMM,"Delaware Investments Minnesota Municipal Income Fund II, Inc.",1993,,
+DLA,"Delta Apparel, Inc.",,Consumer Non-Durables,Apparel
+DNN,Denison Mine Corp,,Basic Industries,Precious Metals
+DGSE,"DGSE Companies, Inc.",,Consumer Services,Consumer Specialties
+DSS,"Document Security Systems, Inc.",,Consumer Durables,Containers/Packaging
+DPW,"DPW Holdings, Inc.",,Capital Goods,Industrial Machinery/Components
+DMF,"Dreyfus Municipal Income, Inc.",1988,,
+DXF,Dunxin Financial Holdings Limited,,,
+GRF,"Eagle Capital Growth Fund, Inc.",,,
+EVM,Eaton Vance California Municipal Bond Fund,2002,,
+EIA,Eaton Vance California Municipal Bond Fund II,2002,,
+CEV,Eaton Vance California Municipal Income Trust,1999,,
+EVV,Eaton Vance Limited Duration Income Fund,2003,,
+MAB,Eaton Vance Massachusetts Municipal Bond Fund,2002,,
+MMV,Eaton Vance Massachusetts Municipal Income Trust,1999,,
+MIW,Eaton Vance Michigan Municipal Bond Fund,2002,,
+EMI,Eaton Vance Michigan Municipal Income Trust,1999,,
+EIM,Eaton Vance Municipal Bond Fund,2002,,
+EIV,Eaton Vance Municipal Bond Fund II,2002,,
+EMJ,Eaton Vance New Jersey Municipal Bond Fund,2002,,
+EVJ,Eaton Vance New Jersey Municipal Income Trust,1999,,
+ENX,Eaton Vance New York Municipal Bond Fund,2002,,
+NYH,Eaton Vance New York Municipal Bond Fund II,2002,,
+EVY,Eaton Vance New York Municipal Income Trust,1999,,
+EIO,Eaton Vance Ohio Municipal Bond Fund,2002,,
+EVO,Eaton Vance Ohio Municipal Income Trust,1999,,
+EIP,Eaton Vance Pennsylvania Municipal Bond Fund,2002,,
+EVP,Eaton Vance Pennsylvania Municipal Income Trust,1999,,
 ELMD,"Electromed, Inc.",2011,Health Care,Biotechnology: Electromedical & Electrotherapeutic Apparatus
-ELLO,Ellomay Capital Ltd.,n/a,Public Utilities,Electric Utilities: Central
-ECF,Ellsworth Growth and Income Fund Ltd.,1986,n/a,n/a
-ECF^A,Ellsworth Growth and Income Fund Ltd.,n/a,n/a,n/a
-EMAN,eMagin Corporation,n/a,Technology,Semiconductors
-MSN,Emerson Radio Corporation,n/a,Consumer Non-Durables,Consumer Electronics/Appliances
-EMX,EMX Royalty Corporation,n/a,Basic Industries,Precious Metals
-UUUU,Energy Fuels Inc,n/a,Basic Industries,Mining & Quarrying of Nonmetallic Minerals (No Fuels)
-UUUU.WS,Energy Fuels Inc,n/a,n/a,n/a
-ENRJ,"EnerJex Resources, Inc.",n/a,Energy,Oil & Gas Production
-ENSV,ENSERVCO Corporation,n/a,Energy,Oilfield Services/Equipment
-ESNC,"EnSync, Inc.",n/a,Public Utilities,Electric Utilities: Central
+ELLO,Ellomay Capital Ltd.,,Public Utilities,Electric Utilities: Central
+ECF,Ellsworth Growth and Income Fund Ltd.,1986,,
+ECF^A,Ellsworth Growth and Income Fund Ltd.,,,
+EMAN,eMagin Corporation,,Technology,Semiconductors
+MSN,Emerson Radio Corporation,,Consumer Non-Durables,Consumer Electronics/Appliances
+EMX,EMX Royalty Corporation,,Basic Industries,Precious Metals
+UUUU,Energy Fuels Inc,,Basic Industries,Mining & Quarrying of Nonmetallic Minerals (No Fuels)
+UUUU.WS,Energy Fuels Inc,,,
+ENRJ,"EnerJex Resources, Inc.",,Energy,Oil & Gas Production
+ENSV,ENSERVCO Corporation,,Energy,Oilfield Services/Equipment
+ESNC,"EnSync, Inc.",,Public Utilities,Electric Utilities: Central
 EGI,Entree Resources Ltd.,2017,Basic Industries,Precious Metals
-EVI,"EnviroStarm, Inc.",n/a,Consumer Services,Other Consumer Services
-ERN,Erin Energy Corp.,n/a,Energy,Oil & Gas Production
-ESP,Espey Mfg. & Electronics Corp.,n/a,Capital Goods,Industrial Machinery/Components
-EVBN,"Evans Bancorp, Inc.",n/a,Finance,Major Banks
-EPM,"Evolution Petroleum Corporation, Inc.",n/a,Energy,Oil & Gas Production
-FEN,First Trust Energy Income and Growth Fund,2004,n/a,n/a
-BDL,"Flanigan&#39;s Enterprises, Inc.",n/a,Consumer Services,Restaurants
-FSI,Flexible Solutions International Inc.,n/a,Basic Industries,Major Chemicals
-FTF,Franklin Limited Duration Income Trust,2003,n/a,n/a
-FSP,Franklin Street Properties Corp.,n/a,Consumer Services,Real Estate Investment Trusts
-FRD,Friedman Industries Inc.,n/a,Capital Goods,Steel/Iron Ore
-FTNW,"FTE Networks, Inc.",n/a,Public Utilities,Telecommunications Equipment
-GGN,"GAMCO Global Gold, Natural Reources & Income Trust ",2005,n/a,n/a
-GGN^B,"GAMCO Global Gold, Natural Reources & Income Trust ",n/a,n/a,n/a
-GST,Gastar Exploration Inc.,n/a,Energy,Oil & Gas Production
-GST^A,Gastar Exploration Inc.,n/a,n/a,n/a
-GST^B,Gastar Exploration Inc.,n/a,n/a,n/a
-JOB,GEE Group Inc.,n/a,Technology,Diversified Commercial Services
-GMO,"General Moly, Inc",n/a,Basic Industries,Precious Metals
-GSB,"GlobalSCAPE, Inc.",n/a,Technology,Computer Software: Prepackaged Software
+EVI,"EnviroStarm, Inc.",,Consumer Services,Other Consumer Services
+ERN,Erin Energy Corp.,,Energy,Oil & Gas Production
+ESP,Espey Mfg. & Electronics Corp.,,Capital Goods,Industrial Machinery/Components
+EVBN,"Evans Bancorp, Inc.",,Finance,Major Banks
+EPM,"Evolution Petroleum Corporation, Inc.",,Energy,Oil & Gas Production
+FEN,First Trust Energy Income and Growth Fund,2004,,
+BDL,"Flanigan&#39;s Enterprises, Inc.",,Consumer Services,Restaurants
+FSI,Flexible Solutions International Inc.,,Basic Industries,Major Chemicals
+FTF,Franklin Limited Duration Income Trust,2003,,
+FSP,Franklin Street Properties Corp.,,Consumer Services,Real Estate Investment Trusts
+FRD,Friedman Industries Inc.,,Capital Goods,Steel/Iron Ore
+FTNW,"FTE Networks, Inc.",,Public Utilities,Telecommunications Equipment
+GGN,"GAMCO Global Gold, Natural Reources & Income Trust ",2005,,
+GGN^B,"GAMCO Global Gold, Natural Reources & Income Trust ",,,
+GST,Gastar Exploration Inc.,,Energy,Oil & Gas Production
+GST^A,Gastar Exploration Inc.,,,
+GST^B,Gastar Exploration Inc.,,,
+JOB,GEE Group Inc.,,Technology,Diversified Commercial Services
+GMO,"General Moly, Inc",,Basic Industries,Precious Metals
+GSB,"GlobalSCAPE, Inc.",,Technology,Computer Software: Prepackaged Software
 GSAT,"Globalstar, Inc.",2006,Consumer Services,Telecommunications Equipment
-GLOW,"Glowpoint, Inc.",n/a,Public Utilities,Telecommunications Equipment
-GORO,Gold Resource Corporation,n/a,Basic Industries,Precious Metals
-GSV,Gold Standard Ventures Corporation,n/a,Basic Industries,Mining & Quarrying of Nonmetallic Minerals (No Fuels)
-AUMN,Golden Minerals Company,n/a,Basic Industries,Precious Metals
-GSS,"Golden Star Resources, Ltd",n/a,Basic Industries,Precious Metals
-GV,Goldfield Corporation (The),n/a,Basic Industries,Water Supply
+GLOW,"Glowpoint, Inc.",,Public Utilities,Telecommunications Equipment
+GORO,Gold Resource Corporation,,Basic Industries,Precious Metals
+GSV,Gold Standard Ventures Corporation,,Basic Industries,Mining & Quarrying of Nonmetallic Minerals (No Fuels)
+AUMN,Golden Minerals Company,,Basic Industries,Precious Metals
+GSS,"Golden Star Resources, Ltd",,Basic Industries,Precious Metals
+GV,Goldfield Corporation (The),,Basic Industries,Water Supply
 GDP,Goodrich Petroleum Corporation,2017,Energy,Oil & Gas Production
-GTE,Gran Tierra Energy Inc.,n/a,Energy,Oil & Gas Production
-GPL,Great Panther Silver Limited,n/a,Basic Industries,Precious Metals
+GTE,Gran Tierra Energy Inc.,,Energy,Oil & Gas Production
+GPL,Great Panther Silver Limited,,Basic Industries,Precious Metals
 SIM,"Grupo Simec, S.A. de C.V.",1993,Basic Industries,Steel/Iron Ore
-GVP,"GSE Systems, Inc.",n/a,Technology,Computer Software: Prepackaged Software
+GVP,"GSE Systems, Inc.",,Technology,Computer Software: Prepackaged Software
 GLF,"GulfMark Offshore, Inc.",2017,Energy,Metal Fabrications
-GLF.WS,"GulfMark Offshore, Inc.",n/a,n/a,n/a
-HEB,"Hemispherx BioPharma, Inc.",n/a,Health Care,Biotechnology: Biological Products (No Diagnostic Substances)
+GLF.WS,"GulfMark Offshore, Inc.",,,
+HEB,"Hemispherx BioPharma, Inc.",,Health Care,Biotechnology: Biological Products (No Diagnostic Substances)
 HCAC,Hennessy Capital Acquisition Corp. III,2017,Finance,Business Services
-HCAC.U,Hennessy Capital Acquisition Corp. III,2017,n/a,n/a
-HCAC.WS,Hennessy Capital Acquisition Corp. III,n/a,n/a,n/a
-HLM^,Hillman Group Capital Trust,n/a,n/a,n/a
-HMG,"HMG/Courtland Properties, Inc.",n/a,Consumer Services,Real Estate Investment Trusts
-HUSA,Houston American Energy Corporation,n/a,Energy,Oil & Gas Production
-IBIO,"iBio, Inc.",n/a,Health Care,Major Pharmaceuticals
-IBO,IBO (Listing Market - NYSE Amex Network B F),n/a,n/a,n/a
-IEC,IEC Electronics Corp.,n/a,Technology,Electrical Products
-IMUC,"ImmunoCellular Therapeutics, Ltd.",n/a,Health Care,Major Pharmaceuticals
-IMUC.WS,"ImmunoCellular Therapeutics, Ltd.",n/a,n/a,n/a
+HCAC.U,Hennessy Capital Acquisition Corp. III,2017,,
+HCAC.WS,Hennessy Capital Acquisition Corp. III,,,
+HLM^,Hillman Group Capital Trust,,,
+HMG,"HMG/Courtland Properties, Inc.",,Consumer Services,Real Estate Investment Trusts
+HUSA,Houston American Energy Corporation,,Energy,Oil & Gas Production
+IBIO,"iBio, Inc.",,Health Care,Major Pharmaceuticals
+IBO,IBO (Listing Market - NYSE Amex Network B F),,,
+IEC,IEC Electronics Corp.,,Technology,Electrical Products
+IMUC,"ImmunoCellular Therapeutics, Ltd.",,Health Care,Major Pharmaceuticals
+IMUC.WS,"ImmunoCellular Therapeutics, Ltd.",,,
 IMH,"Impac Mortgage Holdings, Inc.",1997,Consumer Services,Real Estate Investment Trusts
-IMO,Imperial Oil Limited,n/a,Energy,Integrated oil Companies
-IOR,"Income Opportunity Realty Investors, Inc.",n/a,Consumer Services,Real Estate Investment Trusts
-IGC,India Globalization Capital Inc.,n/a,Consumer Non-Durables,Electronic Components
-INFU,"InfuSystems Holdings, Inc.",n/a,Health Care,Medical/Dental Instruments
-IHT,InnSuites Hospitality Trust,n/a,Consumer Services,Real Estate Investment Trusts
-NSPR,InspireMD Inc.,n/a,Health Care,Medical/Dental Instruments
-NSPR.WS,InspireMD Inc.,n/a,n/a,n/a
-NSPR.WS.B,InspireMD Inc.,n/a,n/a,n/a
+IMO,Imperial Oil Limited,,Energy,Integrated oil Companies
+IOR,"Income Opportunity Realty Investors, Inc.",,Consumer Services,Real Estate Investment Trusts
+IGC,India Globalization Capital Inc.,,Consumer Non-Durables,Electronic Components
+INFU,"InfuSystems Holdings, Inc.",,Health Care,Medical/Dental Instruments
+IHT,InnSuites Hospitality Trust,,Consumer Services,Real Estate Investment Trusts
+NSPR,InspireMD Inc.,,Health Care,Medical/Dental Instruments
+NSPR.WS,InspireMD Inc.,,,
+NSPR.WS.B,InspireMD Inc.,,,
 IDN,"Intellicheck, Inc.",1999,Technology,Computer Software: Prepackaged Software
 INS,Intelligent Systems Corporation,1992,Technology,Computer Software: Prepackaged Software
-THM,International Tower Hill Mines Ltd,n/a,Basic Industries,Precious Metals
+THM,International Tower Hill Mines Ltd,,Basic Industries,Precious Metals
 INTT,inTest Corporation,1997,Capital Goods,Electrical Products
-INUV,"Inuvo, Inc",n/a,Consumer Services,Advertising
-VKI,Invesco Advantage Municipal Income Trust II,n/a,n/a,n/a
-ISR,"IsoRay, Inc.",n/a,Health Care,Medical/Dental Instruments
-ISDR,Issuer Direct Corporation,n/a,Miscellaneous,Publishing
+INUV,"Inuvo, Inc",,Consumer Services,Advertising
+VKI,Invesco Advantage Municipal Income Trust II,,,
+ISR,"IsoRay, Inc.",,Health Care,Medical/Dental Instruments
+ISDR,Issuer Direct Corporation,,Miscellaneous,Publishing
 JRJR,"JRjr33, Inc.",2014,Consumer Services,Other Consumer Services
-KIQ,Kelso Technologies Inc,n/a,Capital Goods,Railroads
-KLDX,Klondex Mines Ltd.,n/a,Basic Industries,Precious Metals
-LTS,Ladenburg Thalmann Financial Services Inc,n/a,Finance,Investment Bankers/Brokers/Service
-LTS^A,Ladenburg Thalmann Financial Services Inc,n/a,n/a,n/a
+KIQ,Kelso Technologies Inc,,Capital Goods,Railroads
+KLDX,Klondex Mines Ltd.,,Basic Industries,Precious Metals
+LTS,Ladenburg Thalmann Financial Services Inc,,Finance,Investment Bankers/Brokers/Service
+LTS^A,Ladenburg Thalmann Financial Services Inc,,,
 LTSL,Ladenburg Thalmann Financial Services Inc,2017,Finance,Investment Bankers/Brokers/Service
-LAQ,"Latin America Equity Fund, Inc. (The)",1991,n/a,n/a
+LAQ,"Latin America Equity Fund, Inc. (The)",1991,,
 LEVB,"Level Brands, Inc.",2017,Consumer Non-Durables,Package Goods/Cosmetics
-LGL,"LGL Group, Inc. (The)",n/a,Capital Goods,Industrial Machinery/Components
+LGL,"LGL Group, Inc. (The)",,Capital Goods,Industrial Machinery/Components
 LBY,"Libbey, Inc.",1993,Capital Goods,Industrial Machinery/Components
-LLEX,"Lilis Energy, Inc.",n/a,Energy,Oil & Gas Production
-LIQT,"LiqTech International, Inc.",n/a,Technology,Industrial Machinery/Components
-MAG,MAG Silver Corporation,n/a,Basic Industries,Precious Metals
+LLEX,"Lilis Energy, Inc.",,Energy,Oil & Gas Production
+LIQT,"LiqTech International, Inc.",,Technology,Industrial Machinery/Components
+MAG,MAG Silver Corporation,,Basic Industries,Precious Metals
 MJCO,Majesco,2015,Technology,Computer Software: Prepackaged Software
-MHH,"Mastech Digital, Inc",n/a,Consumer Services,Professional Services
+MHH,"Mastech Digital, Inc",,Consumer Services,Professional Services
 MTNB,"Matinas Biopharma Holdings, Inc.",2017,Health Care,Major Pharmaceuticals
 MNI,McClatchy Company (The),1988,Consumer Services,Newspapers/Magazines
-IPB,"Merrill Lynch & Co., Inc. 6.0518% Index Plus Trust Certificate",n/a,Finance,Finance: Consumer Services
-MXC,Mexco Energy Corporation,n/a,Energy,Oil & Gas Production
-CCA,MFS California Insured Municipal Trust,1999,n/a,n/a
-MICR,"Micron Solutions, Inc.",n/a,Health Care,Biotechnology: Electromedical & Electrotherapeutic Apparatus
+IPB,"Merrill Lynch & Co., Inc. 6.0518% Index Plus Trust Certificate",,Finance,Finance: Consumer Services
+MXC,Mexco Energy Corporation,,Energy,Oil & Gas Production
+CCA,MFS California Insured Municipal Trust,1999,,
+MICR,"Micron Solutions, Inc.",,Health Care,Biotechnology: Electromedical & Electrotherapeutic Apparatus
 MLSS,"Milestone Scientific, Inc.",2015,Health Care,Industrial Specialties
-MVF,"MuniVest Fund, Inc.",n/a,n/a,n/a
-MZA,"MuniYield Arizona Fund, Inc.",1993,n/a,n/a
+MVF,"MuniVest Fund, Inc.",,,
+MZA,"MuniYield Arizona Fund, Inc.",1993,,
 MYO,Myomo Inc.,2017,Health Care,Industrial Specialties
-NNVC,"NanoViricides, Inc.",n/a,Health Care,Biotechnology: Commercial Physical & Biological Resarch
-ATEST,NASDAQ TEST STOCK,n/a,n/a,n/a
-ATEST.A,NASDAQ TEST STOCK,n/a,n/a,n/a
-ATEST.B,NASDAQ TEST STOCK,n/a,n/a,n/a
-ATEST.C,NASDAQ TEST STOCK,n/a,n/a,n/a
-NHC,National HealthCare Corporation,n/a,Health Care,Hospital/Nursing Management
-NAVB,"Navidea Biopharmaceuticals, Inc.",n/a,Health Care,Biotechnology: In Vitro & In Vivo Diagnostic Substances
-NTIP,"Network-1 Technologies, Inc.",n/a,Miscellaneous,Multi-Sector Companies
-NBW,Neuberger Berman California Intermediate Municipal Fund Inc.,2002,n/a,n/a
-NHS,Neuberger Berman High Yield Strategies Fund,n/a,n/a,n/a
-NBH,Neuberger Berman Intermediate Municipal Fund Inc.,2002,n/a,n/a
-NML,Neuberger Berman MLP Income Fund Inc.,2013,n/a,n/a
-NBO,Neuberger Berman New York Intermediate Municipal Fund Inc.,2002,n/a,n/a
-NRO,"Neuberger Berman Real Estate Securities Income Fund, Inc.",2003,n/a,n/a
-UWN,"Nevada Gold & Casinos, Inc.",n/a,Consumer Services,Services-Misc. Amusement & Recreation
-NSU,Nevsun Resources Ltd,n/a,Basic Industries,Precious Metals
-GBR,"New Concept Energy, Inc",n/a,Energy,Oil & Gas Production
-NEN,New England Realty Associates Limited Partnership,n/a,Consumer Services,Building operators
-NGD,New Gold Inc.,n/a,Basic Industries,Precious Metals
-NXE,Nexgen Energy Ltd.,n/a,Basic Industries,Precious Metals
+NNVC,"NanoViricides, Inc.",,Health Care,Biotechnology: Commercial Physical & Biological Resarch
+ATEST,NASDAQ TEST STOCK,,,
+ATEST.A,NASDAQ TEST STOCK,,,
+ATEST.B,NASDAQ TEST STOCK,,,
+ATEST.C,NASDAQ TEST STOCK,,,
+NHC,National HealthCare Corporation,,Health Care,Hospital/Nursing Management
+NAVB,"Navidea Biopharmaceuticals, Inc.",,Health Care,Biotechnology: In Vitro & In Vivo Diagnostic Substances
+NTIP,"Network-1 Technologies, Inc.",,Miscellaneous,Multi-Sector Companies
+NBW,Neuberger Berman California Intermediate Municipal Fund Inc.,2002,,
+NHS,Neuberger Berman High Yield Strategies Fund,,,
+NBH,Neuberger Berman Intermediate Municipal Fund Inc.,2002,,
+NML,Neuberger Berman MLP Income Fund Inc.,2013,,
+NBO,Neuberger Berman New York Intermediate Municipal Fund Inc.,2002,,
+NRO,"Neuberger Berman Real Estate Securities Income Fund, Inc.",2003,,
+UWN,"Nevada Gold & Casinos, Inc.",,Consumer Services,Services-Misc. Amusement & Recreation
+NSU,Nevsun Resources Ltd,,Basic Industries,Precious Metals
+GBR,"New Concept Energy, Inc",,Energy,Oil & Gas Production
+NEN,New England Realty Associates Limited Partnership,,Consumer Services,Building operators
+NGD,New Gold Inc.,,Basic Industries,Precious Metals
+NXE,Nexgen Energy Ltd.,,Basic Industries,Precious Metals
 HLTH,Nobilis Health Corp.,2015,Health Care,Hospital/Nursing Management
-NAK,"Northern Dynasty Minerals, Ltd.",n/a,Basic Industries,Precious Metals
-NOG,"Northern Oil and Gas, Inc.",n/a,Energy,Oil & Gas Production
+NAK,"Northern Dynasty Minerals, Ltd.",,Basic Industries,Precious Metals
+NOG,"Northern Oil and Gas, Inc.",,Energy,Oil & Gas Production
 NBY,"NovaBay Pharmaceuticals, Inc.",2007,Health Care,Major Pharmaceuticals
-NG,Novagold Resources Inc.,n/a,Basic Industries,Precious Metals
-NTN,"NTN Buzztime, Inc.",n/a,Consumer Services,Broadcasting
+NG,Novagold Resources Inc.,,Basic Industries,Precious Metals
+NTN,"NTN Buzztime, Inc.",,Consumer Services,Broadcasting
 NES,"Nuverra Environmental Solutions, Inc.",2017,Energy,Oilfield Services/Equipment
 OCX,OncoCyte Corporation,2015,Health Care,Biotechnology: In Vitro & In Vivo Diagnostic Substances
-OGEN,Oragenics Inc.,n/a,Health Care,Major Pharmaceuticals
+OGEN,Oragenics Inc.,,Health Care,Major Pharmaceuticals
 TIS,Orchids Paper Products Company,2005,Basic Industries,Paper
-ONP,"Orient Paper, Inc.",n/a,Consumer Durables,Containers/Packaging
+ONP,"Orient Paper, Inc.",,Consumer Durables,Containers/Packaging
 ORM,"Owens Realty Mortgage, Inc.",2013,Consumer Services,Real Estate Investment Trusts
-PCG^A,Pacific Gas & Electric Co.,n/a,n/a,n/a
-PCG^B,Pacific Gas & Electric Co.,n/a,n/a,n/a
-PCG^C,Pacific Gas & Electric Co.,n/a,n/a,n/a
-PCG^D,Pacific Gas & Electric Co.,n/a,n/a,n/a
-PCG^E,Pacific Gas & Electric Co.,n/a,n/a,n/a
-PCG^G,Pacific Gas & Electric Co.,n/a,n/a,n/a
-PCG^H,Pacific Gas & Electric Co.,n/a,n/a,n/a
-PCG^I,Pacific Gas & Electric Co.,n/a,n/a,n/a
-PTN,"Palatin Technologies, Inc.",n/a,Health Care,Major Pharmaceuticals
+PCG^A,Pacific Gas & Electric Co.,,,
+PCG^B,Pacific Gas & Electric Co.,,,
+PCG^C,Pacific Gas & Electric Co.,,,
+PCG^D,Pacific Gas & Electric Co.,,,
+PCG^E,Pacific Gas & Electric Co.,,,
+PCG^G,Pacific Gas & Electric Co.,,,
+PCG^H,Pacific Gas & Electric Co.,,,
+PCG^I,Pacific Gas & Electric Co.,,,
+PTN,"Palatin Technologies, Inc.",,Health Care,Major Pharmaceuticals
 PZG,Paramount Gold Nevada Corp.,2015,Basic Industries,Precious Metals
-TEUM,Pareteum Corporation,n/a,Technology,EDP Services
-PRK,Park National Corporation,n/a,Finance,Major Banks
-PED,Pedevco Corp.,n/a,Energy,Oil & Gas Production
+TEUM,Pareteum Corporation,,Technology,EDP Services
+PRK,Park National Corporation,,Finance,Major Banks
+PED,Pedevco Corp.,,Energy,Oil & Gas Production
 PFNX,Pfenex Inc.,2014,Health Care,Major Pharmaceuticals
-HNW,Pioneer Diversified High Income Trust,2007,n/a,n/a
-PLG,Platinum Group Metals Ltd.,n/a,Basic Industries,Precious Metals
+HNW,Pioneer Diversified High Income Trust,2007,,
+PLG,Platinum Group Metals Ltd.,,Basic Industries,Precious Metals
 PLYM,"Plymouth Industrial REIT, Inc.",2017,Consumer Services,Real Estate Investment Trusts
-PLYM^A,"Plymouth Industrial REIT, Inc.",n/a,n/a,n/a
-PLM,Polymet Mining Corp.,n/a,Basic Industries,Precious Metals
-PW,Power REIT,n/a,Consumer Services,Real Estate Investment Trusts
-PW^A,Power REIT,n/a,n/a,n/a
-PLX,"Protalix BioTherapeutics, Inc.",n/a,Health Care,Biotechnology: Biological Products (No Diagnostic Substances)
-RLGT,"Radiant Logistics, Inc.",n/a,Transportation,Oil Refining/Marketing
-RLGT^A,"Radiant Logistics, Inc.",n/a,n/a,n/a
-UTG,Reaves Utility Income Fund,2004,n/a,n/a
-REED,"Reeds, Inc.",n/a,Consumer Non-Durables,Beverages (Production/Distribution)
+PLYM^A,"Plymouth Industrial REIT, Inc.",,,
+PLM,Polymet Mining Corp.,,Basic Industries,Precious Metals
+PW,Power REIT,,Consumer Services,Real Estate Investment Trusts
+PW^A,Power REIT,,,
+PLX,"Protalix BioTherapeutics, Inc.",,Health Care,Biotechnology: Biological Products (No Diagnostic Substances)
+RLGT,"Radiant Logistics, Inc.",,Transportation,Oil Refining/Marketing
+RLGT^A,"Radiant Logistics, Inc.",,,
+UTG,Reaves Utility Income Fund,2004,,
+REED,"Reeds, Inc.",,Consumer Non-Durables,Beverages (Production/Distribution)
 RHE,"Regional Health Properties, Inc.",2017,Consumer Services,Real Estate Investment Trusts
-RHE^A,"Regional Health Properties, Inc.",n/a,n/a,n/a
-RWC,RELM Wireless Corporation,n/a,Technology,Radio And Television Broadcasting And Communications Equipment
-RCG,"RENN Fund, Inc.",n/a,n/a,n/a
-RVP,"Retractable Technologies, Inc.",n/a,Health Care,Medical/Dental Instruments
-RNN,"Rexahn Pharmaceuticals, Inc.",n/a,Health Care,Major Pharmaceuticals
-REI,"Ring Energy, Inc.",n/a,Energy,Oil & Gas Production
-RIF,RMR Real Estate Income Fund,n/a,n/a,n/a
+RHE^A,"Regional Health Properties, Inc.",,,
+RWC,RELM Wireless Corporation,,Technology,Radio And Television Broadcasting And Communications Equipment
+RCG,"RENN Fund, Inc.",,,
+RVP,"Retractable Technologies, Inc.",,Health Care,Medical/Dental Instruments
+RNN,"Rexahn Pharmaceuticals, Inc.",,Health Care,Major Pharmaceuticals
+REI,"Ring Energy, Inc.",,Energy,Oil & Gas Production
+RIF,RMR Real Estate Income Fund,,,
 SACH,Sachem Capital Corp.,2017,Consumer Services,Real Estate Investment Trusts
-SGA,"Saga Communications, Inc.",n/a,Consumer Services,Broadcasting
-SNMP,Sanchez Midstream Partners LP,n/a,Energy,Oil & Gas Production
-SAND          ,Sandstorm Gold Ltd,n/a,Basic Industries,Precious Metals
+SGA,"Saga Communications, Inc.",,Consumer Services,Broadcasting
+SNMP,Sanchez Midstream Partners LP,,Energy,Oil & Gas Production
+SAND          ,Sandstorm Gold Ltd,,Basic Industries,Precious Metals
 SEB,Seaboard Corporation,1996,Finance,Investment Bankers/Brokers/Service
-SENS,"Senseonics Holdings, Inc.",n/a,Capital Goods,Industrial Machinery/Components
-SVT,"Servotronics, Inc.",n/a,Capital Goods,Industrial Machinery/Components
-SMTS,Sierra Metals Inc.,n/a,Basic Industries,Precious Metals
-SIF,"SIFCO Industries, Inc.",n/a,Capital Goods,Aerospace
-SVM,Silvercorp Metals Inc.,n/a,Basic Industries,Precious Metals
-SKY,Skyline Corporation,n/a,Basic Industries,Homebuilding
-XPL,Solitario Zinc Corp.,n/a,Basic Industries,Precious Metals
-SCE^B,Southern California Edison Company,n/a,n/a,n/a
-SCE^C,Southern California Edison Company,n/a,n/a,n/a
-SCE^D,Southern California Edison Company,n/a,n/a,n/a
-SCE^E,Southern California Edison Company,n/a,n/a,n/a
-SGB,Southwest Georgia Financial Corporation,n/a,Finance,Major Banks
+SENS,"Senseonics Holdings, Inc.",,Capital Goods,Industrial Machinery/Components
+SVT,"Servotronics, Inc.",,Capital Goods,Industrial Machinery/Components
+SMTS,Sierra Metals Inc.,,Basic Industries,Precious Metals
+SIF,"SIFCO Industries, Inc.",,Capital Goods,Aerospace
+SVM,Silvercorp Metals Inc.,,Basic Industries,Precious Metals
+SKY,Skyline Corporation,,Basic Industries,Homebuilding
+XPL,Solitario Zinc Corp.,,Basic Industries,Precious Metals
+SCE^B,Southern California Edison Company,,,
+SCE^C,Southern California Edison Company,,,
+SCE^D,Southern California Edison Company,,,
+SCE^E,Southern California Edison Company,,,
+SGB,Southwest Georgia Financial Corporation,,Finance,Major Banks
 LOV,"Spark Networks, Inc.",2017,Consumer Services,Other Consumer Services
-SRCI,SRC Energy Inc.,n/a,Energy,Oil & Gas Production
-SGY.WS,Stone Energy Corporation,n/a,n/a,n/a
-SSY,"SunLink Health Systems, Inc.",n/a,Health Care,Hospital/Nursing Management
+SRCI,SRC Energy Inc.,,Energy,Oil & Gas Production
+SGY.WS,Stone Energy Corporation,,,
+SSY,"SunLink Health Systems, Inc.",,Health Care,Hospital/Nursing Management
 SDPI,"Superior Drilling Products, Inc.",2014,Energy,Metal Fabrications
-SYN,"Synthetic Biologics, Inc",n/a,Health Care,Major Pharmaceuticals
-TKAT,"Takung Art Co., Ltd.",n/a,Consumer Services,Other Specialty Stores
-TRX,Tanzanian Royalty Exploration Corporation,n/a,Basic Industries,Precious Metals
-TGB,Taseko Mines Limited,n/a,Basic Industries,Precious Metals
-TIK,Tel-Instrument Electronics Corp.,n/a,Capital Goods,Electrical Products
-TGC,"Tengasco, Inc.",n/a,Energy,Oil & Gas Production
-GLU,The Gabelli Global Utility and Income Trust,2004,n/a,n/a
-GLU^A,The Gabelli Global Utility and Income Trust,n/a,n/a,n/a
-GGO,The Gabelli Go Anywhere Trust,2016,n/a,n/a
-GGO^A,The Gabelli Go Anywhere Trust,n/a,n/a,n/a
-TMP,Tompkins Financial Corporation,n/a,Finance,Major Banks
-TAT,Transatlantic Petroleum Ltd,n/a,Energy,Oil & Gas Production
-TRXC,"TransEnterix, Inc.",n/a,Health Care,Medical/Dental Instruments
-TMQ,Trilogy Metals Inc.,n/a,Basic Industries,Precious Metals
-TPHS,Trinity Place Holdings Inc.,n/a,Consumer Services,Building operators
-TRT,Trio-Tech International,n/a,Technology,Industrial Machinery/Components
-HTM,U.S. Geothermal Inc.,n/a,Public Utilities,Electric Utilities: Central
+SYN,"Synthetic Biologics, Inc",,Health Care,Major Pharmaceuticals
+TKAT,"Takung Art Co., Ltd.",,Consumer Services,Other Specialty Stores
+TRX,Tanzanian Royalty Exploration Corporation,,Basic Industries,Precious Metals
+TGB,Taseko Mines Limited,,Basic Industries,Precious Metals
+TIK,Tel-Instrument Electronics Corp.,,Capital Goods,Electrical Products
+TGC,"Tengasco, Inc.",,Energy,Oil & Gas Production
+GLU,The Gabelli Global Utility and Income Trust,2004,,
+GLU^A,The Gabelli Global Utility and Income Trust,,,
+GGO,The Gabelli Go Anywhere Trust,2016,,
+GGO^A,The Gabelli Go Anywhere Trust,,,
+TMP,Tompkins Financial Corporation,,Finance,Major Banks
+TAT,Transatlantic Petroleum Ltd,,Energy,Oil & Gas Production
+TRXC,"TransEnterix, Inc.",,Health Care,Medical/Dental Instruments
+TMQ,Trilogy Metals Inc.,,Basic Industries,Precious Metals
+TPHS,Trinity Place Holdings Inc.,,Consumer Services,Building operators
+TRT,Trio-Tech International,,Technology,Industrial Machinery/Components
+HTM,U.S. Geothermal Inc.,,Public Utilities,Electric Utilities: Central
 UFAB,"Unique Fabricating, Inc.",2015,Capital Goods,Auto Parts:O.E.M.
-UAMY,United States Antimony Corporation,n/a,Capital Goods,Metal Fabrications
-UUU,"Universal Security Instruments, Inc.",n/a,Consumer Non-Durables,Electronic Components
-UQM,UQM Technologies Inc.,n/a,Capital Goods,Industrial Machinery/Components
-URG,Ur Energy Inc,n/a,Basic Industries,Precious Metals
-UEC,Uranium Energy Corp.,n/a,Basic Industries,Precious Metals
-VII,"Vicon Industries, Inc.",n/a,Consumer Durables,Telecommunications Equipment
-VHC,VirnetX Holding Corp,n/a,Miscellaneous,Multi-Sector Companies
-VGZ,Vista Gold Corporation,n/a,Basic Industries,Precious Metals
+UAMY,United States Antimony Corporation,,Capital Goods,Metal Fabrications
+UUU,"Universal Security Instruments, Inc.",,Consumer Non-Durables,Electronic Components
+UQM,UQM Technologies Inc.,,Capital Goods,Industrial Machinery/Components
+URG,Ur Energy Inc,,Basic Industries,Precious Metals
+UEC,Uranium Energy Corp.,,Basic Industries,Precious Metals
+VII,"Vicon Industries, Inc.",,Consumer Durables,Telecommunications Equipment
+VHC,VirnetX Holding Corp,,Miscellaneous,Multi-Sector Companies
+VGZ,Vista Gold Corporation,,Basic Industries,Precious Metals
 VNRX,VolitionRX Limited,2015,Health Care,Biotechnology: In Vitro & In Vivo Diagnostic Substances
-VISI,"Volt Information Sciences, Inc.",n/a,Technology,Professional Services
-EAD,Wells Fargo Income Opportunities Fund,2003,n/a,n/a
-ERC,Wells Fargo Multi-Sector Income Fund,2003,n/a,n/a
-ERH,Wells Fargo Utilities and High Income Fund,2004,n/a,n/a
+VISI,"Volt Information Sciences, Inc.",,Technology,Professional Services
+EAD,Wells Fargo Income Opportunities Fund,2003,,
+ERC,Wells Fargo Multi-Sector Income Fund,2003,,
+ERH,Wells Fargo Utilities and High Income Fund,2004,,
 WRN,Western Copper and Gold Corporation,2011,Basic Industries,Precious Metals
-WYY,WidePoint Corporation,n/a,Technology,EDP Services
-WTT,"Wireless Telecom Group,  Inc.",n/a,Capital Goods,Electrical Products
-XTNT,"Xtant Medical Holdings, Inc.",n/a,Health Care,Biotechnology: Biological Products (No Diagnostic Substances)
-YUMA,"Yuma Energy, Inc.",n/a,Energy,Oil & Gas Production
+WYY,WidePoint Corporation,,Technology,EDP Services
+WTT,"Wireless Telecom Group,  Inc.",,Capital Goods,Electrical Products
+XTNT,"Xtant Medical Holdings, Inc.",,Health Care,Biotechnology: Biological Products (No Diagnostic Substances)
+YUMA,"Yuma Energy, Inc.",,Energy,Oil & Gas Production
 ZDGE,"Zedge, Inc.",2016,Technology,Computer Software: Prepackaged Software
 ZOM,Zomedica Pharmaceuticals Corp.,2017,Health Care,Major Pharmaceuticals
