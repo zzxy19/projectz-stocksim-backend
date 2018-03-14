@@ -7,10 +7,10 @@ import java.util.List;
 
 public interface CompanyRepository extends JpaRepository<Company, String> {
   static final String SEARCH_COMPANY_SYMBOL_QUERY =
-      "select c from Company c where c.symbol like ?1 ";
+      "SELECT c FROM Company c WHERE c.symbol ILIKE ?1 ";
 
   static final String SEARCH_COMPANY_NAME_QUERY =
-      "select c from Company c where c.name like ?1 ";
+      "SELECT c FROM Company c WHERE c.name ILIKE ?1 ";
 
   @Query(SEARCH_COMPANY_SYMBOL_QUERY)
   List<Company> searchCompanyBySymbol(String symbol);

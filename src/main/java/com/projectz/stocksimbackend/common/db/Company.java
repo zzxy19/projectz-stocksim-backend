@@ -5,7 +5,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table( name = "company_dev" )
+@Table( name = "company_prod" )
 public class Company {
   @Id
   private String symbol;
