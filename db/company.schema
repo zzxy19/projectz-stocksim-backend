@@ -5,3 +5,11 @@ CREATE TABLE company_dev (
     Sector      varchar(100),
     Industry    varchar(100)
 );
+
+CREATE TABLE company (
+    Symbol      varchar(10) PRIMARY KEY,
+    Name        varchar(100) NOT NULL,
+    IPOyear     integer,
+    Sector      varchar(100),
+    Industry    varchar(100)
+);

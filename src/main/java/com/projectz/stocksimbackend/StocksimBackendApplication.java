@@ -7,6 +7,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class StocksimBackendApplication {
 
 	public static void main(String[] args) {
+
 		SpringApplication.run(StocksimBackendApplication.class, args);
+
 	}
 }

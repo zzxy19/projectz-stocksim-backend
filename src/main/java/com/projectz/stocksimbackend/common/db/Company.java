@@ -1,9 +1,11 @@
-package com.projectz.stocksimbackend.common.db.entity;
+package com.projectz.stocksimbackend.common.db;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 @Entity
+@Table( name = "company_dev" )
 public class Company {
   @Id
   private String symbol;

@@ -1,22 +1,17 @@
 package com.projectz.stocksimbackend.searchsymbol;
 
+import com.projectz.stocksimbackend.common.db.Company;
+
+import java.util.List;
+
 public class SearchSymbolResponse {
-  private String symbol;
-  private String data;
+  private List<Company> companies;
 
-  public String getSymbol() {
-    return symbol;
+  public List<Company> getCompanies() {
+    return companies;
   }
 
-  public void setSymbol(String symbol) {
-    this.symbol = symbol;
-  }
-
-  public String getData() {
-    return data;
-  }
-
-  public void setData(String data) {
-    this.data = data;
+  public void setCompanies(List<Company> companies) {
+    this.companies = companies;
   }
 }
