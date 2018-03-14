@@ -5,6 +5,8 @@ import com.projectz.stocksimbackend.common.db.CompanyRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
 
 @Service
@@ -20,7 +22,11 @@ public class SearchSymbolServiceImpl implements SearchSymbolService {
   }
 
   private List<Company> fetchCompanyName(String searchString) {
-    return companyRepository.searchCompanyBySymbolOrname(searchString);
+    HashSet<Company> companiesOfInterest = new HashSet<>();
+    String queryArgument = "%" + searchString + "%";
+    companiesOfInterest.addAll(companyRepository.searchCompanyByName(queryArgument));
+    companiesOfInterest.addAll(companyRepository.searchCompanyBySymbol(queryArgument));
+    return new ArrayList<>(companiesOfInterest);
   }
 
 }
