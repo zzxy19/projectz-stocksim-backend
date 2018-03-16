@@ -34,8 +34,9 @@ public class DispatcherController {
   @GetMapping("/searchSymbol")
   @ResponseBody
   public SearchSymbolResponse handleGetSearchSymbol(
-    @RequestParam(name = "symbol", required=false, defaultValue = "") String searchString) {
-    return searchSymbolService.handleSearchSymbolRequest(searchString);
+    @RequestParam(name = "symbol") String searchString,
+    @RequestParam(name = "max_result", required = false, defaultValue = "10") int maxResult) {
+    return searchSymbolService.handleSearchSymbolRequest(searchString, maxResult);
   }
 
 }
