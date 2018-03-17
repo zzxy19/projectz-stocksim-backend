@@ -18,6 +18,10 @@ To start a server on AWS EC2 AMI instance:
     Bring up the server:
         # Running this command keeps the server alive after you c^C and close SSH connection
         nohup ./mvnw spring-boot:run &
+    Kill the background server:
+        ps -ef
+        # find the PID of the java application
+        kill $PID
 To connect to RDS from EC2:
     Set RDS rule to only allow traffic from same VPS (put them in the same VPS!)
     Install psql on EC2:
@@ -27,6 +31,9 @@ To connect to RDS from EC2:
         # This is probably not necessary
         sudo service postgresql initdb
     Connect to RDS via psql
+        HOST=projectz-stocksim-db.chsesjujswlg.us-east-2.rds.amazonaws.com
+        USERNAME=oneplustwo
+        DB=stocksim_zbase
         psql --host=$HOST --username=$USERNAME --dbname=$DB
     Ingest data to RDS from EC2
         Trim some columns to only the needed ones (use Google sheet)
