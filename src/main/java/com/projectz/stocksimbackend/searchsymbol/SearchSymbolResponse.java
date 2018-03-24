@@ -4,7 +4,7 @@ import com.projectz.stocksimbackend.common.db.Company;
 
 import java.util.List;
 
-public class SearchSymbolResponse {
+public final class SearchSymbolResponse {
   private List<Company> companies;
 
   public List<Company> getCompanies() {

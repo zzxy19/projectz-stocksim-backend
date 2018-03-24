@@ -37,7 +37,7 @@ public class AlphaVantageAPIService {
     HttpsRequestBuilder requestBuilder;
     requestBuilder = new HttpsRequestBuilder(ALPHA_VANTAGE_DOMAIN_NAME, REQUEST, paramBuilder);
     try {
-      BufferedReader httpResponseReader = requestBuilder.getResponseBufferedReader();
+      BufferedReader httpResponseReader = new BufferedReader(requestBuilder.getResponseBufferedReader());
       String line;
       StringBuilder httpResponseBuilder = new StringBuilder();
       while ((line = httpResponseReader.readLine()) != null) {
