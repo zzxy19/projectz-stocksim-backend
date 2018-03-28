@@ -1,7 +1,11 @@
 package com.projectz.stocksimbackend.showpricetimeline;
 
-import com.projectz.stocksimbackend.common.db.Company;
+import com.projectz.stocksimbackend.common.proto.TimeSeriesProto;
 
 public final class ShowPriceTimelineResponse {
-  private Company company;
+  private TimeSeriesProto timeSeries;
+
+  public TimeSeriesProto getTimeSeries() { return timeSeries; }
+
+  public void setTimeSeries(TimeSeriesProto timeSeries) { this.timeSeries = timeSeries; }
 }
