@@ -22,8 +22,8 @@ public class AlphaVantageAPIService {
 
   private AlphaVantageAPIService() {}
 
-  public static String fetchPastDayTimeSeriesData(String symbol) {
-    return getTimeSeriesData("TIME_SERIES_INTRADAY", symbol, "15min");
+  public static String fetchPastDayTimeSeriesData(String symbol, String interval) {
+    return getTimeSeriesData("TIME_SERIES_INTRADAY", symbol, interval);
   }
 
   private static String getTimeSeriesData(String function, String symbol, String interval) {
