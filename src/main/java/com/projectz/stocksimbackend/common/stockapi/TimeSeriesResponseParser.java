@@ -12,4 +12,12 @@ public final class TimeSeriesResponseParser {
       gson.fromJson(inputReader, TimeSeriesIntradayResponse.class);
     return response;
   }
+
+  public static TimeSeriesResponse parsetTimeSeriesResponse(
+      String rawResponse) {
+    Gson gson = new Gson();
+    TimeSeriesResponse response =
+        gson.fromJson(rawResponse, TimeSeriesResponse.class);
+    return response;
+  }
 }

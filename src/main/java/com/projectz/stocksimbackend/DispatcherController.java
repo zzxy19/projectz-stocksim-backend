@@ -47,9 +47,11 @@ public class DispatcherController {
   @ResponseBody
   public ShowPriceTimelineResponse handleGetShowPriceTimeline(
       @RequestParam(name = "symbol") String symbol,
+      @RequestParam(name = "type", required = false, defaultValue = "0") int type,
+      @RequestParam(name = "interval", required = false, defaultValue = "1min") String interval,
       @RequestParam(name = "date_range", required = false, defaultValue = "1") int dateRange,
       @RequestParam(name = "start_date", required = false, defaultValue = "0") int startDate) {
-    return showPriceTimelineService.handleShowPriceTimelineRequest(symbol, dateRange, startDate);
+    return showPriceTimelineService.handleShowPriceTimelineRequest(symbol, type, interval, dateRange, startDate);
   }
 
 }

@@ -4,7 +4,7 @@ import com.google.gson.annotations.SerializedName;
 
 import java.util.Map;
 
-public class TimeSeriesIntradayResponse {
+public class TimeSeriesResponse {
   public Map<String, Map<String, String>> getTimeSeries() {
     return timeSeries;
   }
