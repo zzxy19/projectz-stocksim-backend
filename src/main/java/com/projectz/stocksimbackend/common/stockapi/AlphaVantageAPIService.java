@@ -26,6 +26,18 @@ public class AlphaVantageAPIService {
     return getTimeSeriesData("TIME_SERIES_INTRADAY", symbol, interval);
   }
 
+  public static String fetchDailyTimeSeriesData(String symbol){
+    return getTimeSeriesData("TIME_SERIES_DAILY", symbol, "");
+  }
+
+  public static String fetchWeeklyTimeSeriesData(String symbol){
+    return getTimeSeriesData("TIME_SERIES_WEEKLY", symbol, "");
+  }
+
+  public static String fetchMonthlyTimeSeriesData(String symbol){
+    return getTimeSeriesData("TIME_SERIES_MONTHLY", symbol, "");
+  }
+
   private static String getTimeSeriesData(String function, String symbol, String interval) {
     Map<String, String> paramBuilder = new TreeMap<>();
     paramBuilder.put(FUNCTION_FIELD, function);
