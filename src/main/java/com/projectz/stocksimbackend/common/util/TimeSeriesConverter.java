@@ -1,11 +1,10 @@
 package com.projectz.stocksimbackend.common.util;
 
-import com.projectz.stocksimbackend.common.proto.TimeSeriesProto;
-import com.projectz.stocksimbackend.common.proto.TimeSeriesValue;
+import com.projectz.stocksimbackend.common.proto.timeseries.TimeSeriesProto;
+import com.projectz.stocksimbackend.common.proto.timeseries.TimeSeriesValue;
 
 import java.util.ArrayList;
 import java.util.Map;
-import java.util.logging.Logger;
 
 public class TimeSeriesConverter {
   //meta date
@@ -27,7 +26,8 @@ public class TimeSeriesConverter {
 
     //set up meta date
     timeSeriesProto.setSymbol(metaData.get(SYMBOL_FIELD));
-    timeSeriesProto.setInterval(metaData.get(INTERVAL_FIELD));
+    // TODO: fix this
+    // timeSeriesProto.setInterval(metaData.get(INTERVAL_FIELD));
     timeSeriesProto.setLastRefreshed(metaData.get(LR_FIELD));
 
     ArrayList<TimeSeriesValue> timeSeriesValues = new ArrayList<>();

@@ -1,6 +1,6 @@
 package com.projectz.stocksimbackend.showpricetimeline;
 
-import com.projectz.stocksimbackend.common.proto.TimeSeriesProto;
+import com.projectz.stocksimbackend.common.proto.timeseries.TimeSeriesProto;
 
 public final class ShowPriceTimelineResponse {
   private TimeSeriesProto timeSeries;

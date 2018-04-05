@@ -1,4 +1,4 @@
-package com.projectz.stocksimbackend.common.proto;
+package com.projectz.stocksimbackend.common.proto.timeseries;
 
 public class TimeSeriesValue {
   private String time;

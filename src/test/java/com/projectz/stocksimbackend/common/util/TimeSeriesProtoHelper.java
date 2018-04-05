@@ -1,7 +1,7 @@
 package com.projectz.stocksimbackend.common.util;
 
-import com.projectz.stocksimbackend.common.proto.TimeSeriesProto;
-import com.projectz.stocksimbackend.common.proto.TimeSeriesValue;
+import com.projectz.stocksimbackend.common.proto.timeseries.TimeSeriesProto;
+import com.projectz.stocksimbackend.common.proto.timeseries.TimeSeriesValue;
 
 import java.util.ArrayList;
 
