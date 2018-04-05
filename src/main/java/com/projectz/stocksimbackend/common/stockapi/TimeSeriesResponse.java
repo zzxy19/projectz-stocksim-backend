@@ -25,7 +25,7 @@ public class TimeSeriesResponse {
   private Map<String, String> metadata;
 
   @SerializedName(value="Time Series (1min)", alternate={"Time Series (5min)",
-      "Time Series (15min)", "Time Series (30min)", "Time Series (60min)", "Time Series (daily)",
+      "Time Series (15min)", "Time Series (30min)", "Time Series (60min)",
       "Time Series (Daily)", "Weekly Time Series", "Monthly Time Series"})
   Map<String, Map<String, String>> timeSeries;
 }
