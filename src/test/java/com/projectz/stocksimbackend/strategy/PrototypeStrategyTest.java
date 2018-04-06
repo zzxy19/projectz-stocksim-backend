@@ -1,17 +1,13 @@
 package com.projectz.stocksimbackend.strategy;
 
-import com.projectz.stocksimbackend.common.proto.strategy.Clause;
-import com.projectz.stocksimbackend.common.proto.strategy.EqualClause;
-import com.projectz.stocksimbackend.common.proto.strategy.LargerClause;
-import com.projectz.stocksimbackend.common.proto.strategy.PriceEntity;
+import com.projectz.stocksimbackend.common.proto.strategy.*;
 import com.projectz.stocksimbackend.common.proto.timeseries.TimeSeriesProto;
 import com.projectz.stocksimbackend.common.sample.SampleDataReader;
 import org.junit.Before;
 import org.junit.Test;
 
 public class PrototypeStrategyTest {
-  private static final TimeSeriesProto SAMPLE_DATA =
-    SampleDataReader.readTimeSeriesProtoFromIntradayData();
+  private TimeSeriesProto sampleIntradayData;
   /**
    tsv0.setTime("2018-03-23 16:00:00");
    tsv0.setVolume(10674681);
@@ -29,28 +25,33 @@ public class PrototypeStrategyTest {
    */
 
   @Before
-  public void setUp() {}
+  public void setUp() {
+    sampleIntradayData = SampleDataReader.getExpectedTimeSeriesProtoFromIntradayData();
+  }
 
   @Test
   public void testPriceEntityEvaluation() {
     float expectedValue = (float) 88.0900;
     PriceEntity priceEntity = new PriceEntity(1);
-    assert(priceEntity.evaluate(SAMPLE_DATA) == expectedValue);
+    assert(priceEntity.evaluate(sampleIntradayData) == expectedValue);
   }
 
   @Test
   public void testEqualClauseEvaluation() {
-    PriceEntity priceAtToday = new PriceEntity(0);
-    PriceEntity priceAtYesterday = new PriceEntity(1);
+    Entity priceAtToday = new PriceEntity(0);
+    Entity priceAtYesterday = new PriceEntity(1);
     Clause priceTodayEqualsYesterday = new EqualClause(priceAtToday, priceAtYesterday);
-    assert(!priceTodayEqualsYesterday.satisfy(SAMPLE_DATA));
+    assert(!priceTodayEqualsYesterday.satisfy(sampleIntradayData));
   }
 
   @Test
   public void testLargerClauseEvaluation() {
-    PriceEntity priceAtToday = new PriceEntity(0);
-    PriceEntity priceAtYesterday = new PriceEntity(1);
+    Entity priceAtToday = new PriceEntity(0);
+    Entity priceAtYesterday = new PriceEntity(1);
     Clause priceTodayLargerThanYesterday = new LargerClause(priceAtToday, priceAtYesterday);
-    assert(!priceTodayLargerThanYesterday.satisfy(SAMPLE_DATA));
+    assert(!priceTodayLargerThanYesterday.satisfy(sampleIntradayData));
+    Entity EightyDollars = new ConstantEntity(80);
+    Clause priceTodayHigherThanEightyDollars = new LargerClause(priceAtToday, EightyDollars);
+    assert(priceTodayHigherThanEightyDollars.satisfy(sampleIntradayData));
   }
 }
