@@ -4,7 +4,7 @@ import java.util.Map;
 
 public class TimeSeriesResponseHelper {
   public static boolean equals(
-      TimeSeriesIntradayResponse one, TimeSeriesIntradayResponse other) {
+      TimeSeriesResponse one, TimeSeriesResponse other) {
     if (!equals(one.getMetadata(), other.getMetadata())) {
       return false;
     }

@@ -5,6 +5,7 @@ import com.projectz.stocksimbackend.common.proto.timeseries.TimeSeriesProto;
 import com.projectz.stocksimbackend.common.proto.timeseries.TimeSeriesValue;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class PriceEntity extends Entity {
   private long amount;
@@ -19,7 +20,7 @@ public class PriceEntity extends Entity {
   public double evaluate(TimeSeriesProto proto) {
     long secondsAgo = amount * dateRange.conversionFactor;
     long indexBackward = secondsAgo / proto.getInterval();
-    ArrayList<TimeSeriesValue> values = proto.getValues();
+    List<TimeSeriesValue> values = proto.getValues();
     if (indexBackward >= values.size()) {
       return -1;
     }

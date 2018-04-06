@@ -3,16 +3,13 @@ package com.projectz.stocksimbackend.common.stockapi;
 import org.junit.Before;
 import org.junit.Test;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
-import java.io.InputStreamReader;
+import java.io.*;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
 public class TimeSeriesResponseParserTest {
   private static final String TEST_DIR =
-    "src/test/java/com/projectz/stocksimbackend/common/stockapi/";
+    "src/test/java/com/projectz/stocksimbackend/common/sample/";
 
   @Before
   public void setup() {
@@ -20,11 +17,11 @@ public class TimeSeriesResponseParserTest {
   }
 
   @Test
-  public void testTimeSeriesIntradayParsing() throws Exception {
+  public void testTimeSeriesParsing() throws Exception {
     File file = new File(TEST_DIR + "SampleTimeSeriesIntradayData.txt");
-    InputStreamReader reader = new FileReader(file);
+    InputStreamReader inputReader = new FileReader(file);
 
-    TimeSeriesIntradayResponse expectedResponse = new TimeSeriesIntradayResponse();
+    TimeSeriesResponse expectedResponse = new TimeSeriesResponse();
     Map<String, String> expectedMetadata = new LinkedHashMap<>();
     expectedMetadata.put("1. Information", "Intraday (15min) prices and volumes");
     expectedMetadata.put("2. Symbol", "MSFT");
@@ -43,8 +40,8 @@ public class TimeSeriesResponseParserTest {
       createTestTimeSeries("88.4300", "88.4700", "88.0000", "88.0900", "2363268"));
     expectedResponse.setTimeSeries(timeSeries);
 
-    TimeSeriesIntradayResponse response =
-      TimeSeriesResponseParser.parseTimeSeriesIntradayResponse(reader);
+    TimeSeriesResponse response =
+      TimeSeriesResponseParser.parseTimeSeriesResponse(inputReader);
     assert(TimeSeriesResponseHelper.equals(response, expectedResponse));
   }
 

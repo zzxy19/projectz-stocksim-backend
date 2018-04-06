@@ -1,11 +1,14 @@
 package com.projectz.stocksimbackend.common.stockapi;
 
+import com.projectz.stocksimbackend.common.proto.common.DateRange;
+import com.projectz.stocksimbackend.common.proto.timeseries.TimeSeriesProto;
 import com.projectz.stocksimbackend.common.util.HttpsRequestBuilder;
+import com.projectz.stocksimbackend.common.util.TimeSeriesConverter;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.Map;
 import java.util.TreeMap;
 
@@ -22,42 +25,44 @@ public class AlphaVantageAPIService {
 
   private AlphaVantageAPIService() {}
 
-  public static String fetchPastDayTimeSeriesData(String symbol, String interval) {
-    return getTimeSeriesData("TIME_SERIES_INTRADAY", symbol, interval);
+  public static TimeSeriesProto fetchTimeSeriesData(DateRange dateRange, String symbol) {
+    TimeSeriesProto timeSeriesProto =
+        TimeSeriesConverter.convertTimeSeriesResponseToProto(
+            getTimeSeriesResponse(dateRange.function, symbol, dateRange.intervalStr));
+    timeSeriesProto.setDateRange(dateRange);
+    timeSeriesProto.setInterval(dateRange.interval);
+    trimTimeSeriesProto(timeSeriesProto);
+    return timeSeriesProto;
   }
 
-  public static String fetchDailyTimeSeriesData(String symbol){
-    return getTimeSeriesData("TIME_SERIES_DAILY", symbol, "");
+  private static void trimTimeSeriesProto(TimeSeriesProto timeSeriesProto) {
+    DateRange dateRange = timeSeriesProto.getDateRange();
+    int numValues = timeSeriesProto.getValues().size();
+    int endIndex = Math.min(dateRange.numEntry, numValues);
+    timeSeriesProto.setValues(
+      timeSeriesProto.getValues().subList(0, endIndex));
   }
 
-  public static String fetchWeeklyTimeSeriesData(String symbol){
-    return getTimeSeriesData("TIME_SERIES_WEEKLY", symbol, "");
-  }
-
-  public static String fetchMonthlyTimeSeriesData(String symbol){
-    return getTimeSeriesData("TIME_SERIES_MONTHLY", symbol, "");
-  }
-
-  private static String getTimeSeriesData(String function, String symbol, String interval) {
+  private static TimeSeriesResponse getTimeSeriesResponse(
+    String function, String symbol, String interval) {
     Map<String, String> paramBuilder = new TreeMap<>();
     paramBuilder.put(FUNCTION_FIELD, function);
     paramBuilder.put(SYMBOL_FIELD, symbol);
-    paramBuilder.put(INTERVAL_FIELD, interval);
+    if (interval != null) {
+      paramBuilder.put(INTERVAL_FIELD, interval);
+    }
     paramBuilder.put(APIKEY_FIELD, API_KEY);
 
     logger.info("Initiated http request to Alpha Vantage stock api.");
     HttpsRequestBuilder requestBuilder;
     requestBuilder = new HttpsRequestBuilder(ALPHA_VANTAGE_DOMAIN_NAME, REQUEST, paramBuilder);
     try {
-      BufferedReader httpResponseReader = new BufferedReader(requestBuilder.getResponseBufferedReader());
-      String line;
-      StringBuilder httpResponseBuilder = new StringBuilder();
-      while ((line = httpResponseReader.readLine()) != null) {
-        httpResponseBuilder.append(line);
-      }
+      InputStreamReader httpResponseReader = requestBuilder.getResponseBufferedReader();
+      TimeSeriesResponse timeSeriesResponse =
+        TimeSeriesResponseParser.parseTimeSeriesResponse(httpResponseReader);
       httpResponseReader.close();
       logger.info("Finished fetching data from Alpha Vantage stock api.");
-      return httpResponseBuilder.toString();
+      return timeSeriesResponse;
     } catch (IOException ex) {
       logger.error("Http connection to Alpha Vantage stock api failed", ex);
       throw new RuntimeException(ex);
