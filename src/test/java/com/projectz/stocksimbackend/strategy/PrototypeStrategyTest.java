@@ -1,57 +1,97 @@
 package com.projectz.stocksimbackend.strategy;
 
 import com.projectz.stocksimbackend.common.proto.strategy.*;
-import com.projectz.stocksimbackend.common.proto.timeseries.TimeSeriesProto;
-import com.projectz.stocksimbackend.common.sample.SampleDataReader;
+import com.projectz.stocksimbackend.common.proto.timeseries.TimeSeriesValue;
 import org.junit.Before;
 import org.junit.Test;
 
-public class PrototypeStrategyTest {
-  private TimeSeriesProto sampleIntradayData;
-  /**
-   tsv0.setTime("2018-03-23 16:00:00");
-   tsv0.setVolume(10674681);
-   tsv0.setOpen((float) 88.1000);
-   tsv0.setClose((float) 87.1800);
-   tsv0.setHigh((float) 88.1400);
-   tsv0.setLow((float) 87.0800);
+import java.util.ArrayList;
+import java.util.List;
 
-   tsv1.setTime("2018-03-23 15:45:00");
-   tsv1.setVolume(2363268);
-   tsv1.setOpen((float) 88.4300);
-   tsv1.setClose((float) 88.0900);
-   tsv1.setHigh((float) 88.4700);
-   tsv1.setLow((float) 88.0000);
-   */
+public class PrototypeStrategyTest {
+  private TimeSeriesAnalyzable sampleIntradayAnalyzable;
 
   @Before
   public void setUp() {
-    sampleIntradayData = SampleDataReader.getExpectedTimeSeriesProtoFromIntradayData();
+    List<TimeSeriesValue> values = new ArrayList<>();
+    // new TimeSeriesValue(DATE, OPEN, HIGH, LOW, CLOSE, VOLUME)
+    values.add(new TimeSeriesValue("2018-01-05", 50, 50, 20, 25, 1000));
+    values.add(new TimeSeriesValue("2018-01-04", 30, 60, 20, 50, 2000));
+    values.add(new TimeSeriesValue("2018-01-03", 50, 60, 20, 30, 100));
+    values.add(new TimeSeriesValue("2018-01-02", 80, 80, 40, 50, 200));
+    values.add(new TimeSeriesValue("2018-01-01", 100, 120, 80, 80, 4000));
+    sampleIntradayAnalyzable = new TimeSeriesAnalyzable("TSLA", values);
   }
 
   @Test
   public void testPriceEntityEvaluation() {
-    float expectedValue = (float) 88.0900;
-    PriceEntity priceEntity = new PriceEntity(1);
-    assert(priceEntity.evaluate(sampleIntradayData) == expectedValue);
+    PriceEntity priceEntity = new PriceEntity(0);
+    assert(priceEntity.evaluate(sampleIntradayAnalyzable) == (float) 80);
+
+    sampleIntradayAnalyzable.goToNextDay();
+    assert(priceEntity.evaluate(sampleIntradayAnalyzable) == (float) 50);
   }
 
   @Test
-  public void testEqualClauseEvaluation() {
+  public void testGoToNextDayFailAfterFourTimes() {
+    for (int i = 0; i < 4; i++) {
+      assert(sampleIntradayAnalyzable.goToNextDay());
+    }
+    assert(!sampleIntradayAnalyzable.goToNextDay());
+  }
+
+  @Test
+  public void testLargerClauseEvaluation_constantEntity() {
     Entity priceAtToday = new PriceEntity(0);
-    Entity priceAtYesterday = new PriceEntity(1);
-    Clause priceTodayEqualsYesterday = new EqualClause(priceAtToday, priceAtYesterday);
-    assert(!priceTodayEqualsYesterday.satisfy(sampleIntradayData));
+    Entity myCost = new ConstantEntity(10);
+    Clause priceTodayHigherThanMyCost = new LargerClause(priceAtToday, myCost);
+    assert(priceTodayHigherThanMyCost.satisfy(sampleIntradayAnalyzable));
   }
 
   @Test
-  public void testLargerClauseEvaluation() {
+  public void testLargerClauseEvaluation_yesterdayOutOfRange() {
     Entity priceAtToday = new PriceEntity(0);
     Entity priceAtYesterday = new PriceEntity(1);
     Clause priceTodayLargerThanYesterday = new LargerClause(priceAtToday, priceAtYesterday);
-    assert(!priceTodayLargerThanYesterday.satisfy(sampleIntradayData));
-    Entity EightyDollars = new ConstantEntity(80);
-    Clause priceTodayHigherThanEightyDollars = new LargerClause(priceAtToday, EightyDollars);
-    assert(priceTodayHigherThanEightyDollars.satisfy(sampleIntradayData));
+    assert(!priceTodayLargerThanYesterday.satisfy(sampleIntradayAnalyzable));
+  }
+
+  @Test
+  public void testLargerClauseEvaluation_yesterdayInRange() {
+    // Move two days up to 2018-01-03
+    assert(sampleIntradayAnalyzable.goToNextDay());
+    assert(sampleIntradayAnalyzable.goToNextDay());
+    Entity priceAtToday = new PriceEntity(0); // 2018-01-03: $30
+    Entity priceAtYesterday = new PriceEntity(1); // 2018-01-02: $50
+    Clause priceYesterdayLargerThanToday = new LargerClause(priceAtYesterday, priceAtToday);
+    assert(priceYesterdayLargerThanToday.satisfy(sampleIntradayAnalyzable));
+  }
+
+  @Test
+  public void testLargerClauseEvaluation_priceTodayDropMoreThanTenPercentFromYesterday() {
+    // Move two days up to 2018-01-03
+    assert(sampleIntradayAnalyzable.goToNextDay());
+    assert(sampleIntradayAnalyzable.goToNextDay());
+    Entity priceAtToday = new PriceEntity(0); // 2018-01-03: $30
+    Entity priceAtYesterday = new PriceEntity(1); // 2018-01-02: $50
+    Entity tenPercentOfYesterday = new PriceEntity(1, 0.1);
+    Entity dropTenPercentFromYesterday = new DiffEntity(priceAtYesterday, tenPercentOfYesterday);
+    Clause priceTodayDropMoreThanTenPercent =
+      new LargerClause(dropTenPercentFromYesterday, priceAtToday);
+    assert(priceTodayDropMoreThanTenPercent.satisfy(sampleIntradayAnalyzable));
+  }
+
+  @Test
+  public void testLargerClauseEvaluation_priceTodayDropLessThanHalfFromYesterday() {
+    // Move two days up to 2018-01-03
+    assert(sampleIntradayAnalyzable.goToNextDay());
+    assert(sampleIntradayAnalyzable.goToNextDay());
+    Entity priceAtToday = new PriceEntity(0); // 2018-01-03: $30
+    Entity priceAtYesterday = new PriceEntity(1); // 2018-01-02: $50
+    Entity halfOfYesterday = new PriceEntity(1, 0.5);
+    Entity dropHalfFromYesterday = new DiffEntity(priceAtYesterday, halfOfYesterday);
+    Clause priceTodayDropMoreThanHalf =
+      new LargerClause(dropHalfFromYesterday, priceAtToday);
+    assert(!priceTodayDropMoreThanHalf.satisfy(sampleIntradayAnalyzable));
   }
 }

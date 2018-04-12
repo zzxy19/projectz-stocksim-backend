@@ -1,16 +1,14 @@
 package com.projectz.stocksimbackend.common.proto.strategy;
 
-import com.projectz.stocksimbackend.common.proto.timeseries.TimeSeriesProto;
-
 public class ConstantEntity extends Entity {
-  private double value;
+  private float value;
 
-  public ConstantEntity(double value) {
+  public ConstantEntity(float value) {
     this.value = value;
   }
 
   @Override
-  public double evaluate(TimeSeriesProto proto) {
+  public Float evaluate(TimeSeriesAnalyzable unusedAnalyzable) {
     return value;
   }
 }

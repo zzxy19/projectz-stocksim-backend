@@ -1,5 +1,6 @@
 package com.projectz.stocksimbackend.common.util;
 
+import com.projectz.stocksimbackend.common.proto.strategy.TimeSeriesAnalyzable;
 import com.projectz.stocksimbackend.common.proto.timeseries.TimeSeriesProto;
 import com.projectz.stocksimbackend.common.proto.timeseries.TimeSeriesValue;
 import com.projectz.stocksimbackend.common.stockapi.TimeSeriesResponse;
@@ -27,6 +28,12 @@ public class TimeSeriesConverter {
       return "";
     }
     return ret;
+  }
+
+  public static TimeSeriesAnalyzable convertTimeSeriesProtoToAnalyzable(
+      TimeSeriesProto timeSeriesProto) {
+    return new TimeSeriesAnalyzable(
+      timeSeriesProto.getSymbol(), timeSeriesProto.getValues());
   }
 
   public static TimeSeriesProto convertTimeSeriesResponseToProto(

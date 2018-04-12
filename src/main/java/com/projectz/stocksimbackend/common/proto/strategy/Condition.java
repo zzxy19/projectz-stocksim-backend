@@ -1,8 +1,5 @@
 package com.projectz.stocksimbackend.common.proto.strategy;
 
-
-import com.projectz.stocksimbackend.common.proto.timeseries.TimeSeriesProto;
-
 import java.util.List;
 
 public class Condition {
@@ -12,9 +9,9 @@ public class Condition {
     clauseList = clauses;
   }
 
-  public boolean satisfy(TimeSeriesProto proto) {
+  public boolean satisfy(TimeSeriesAnalyzable analyzable) {
     for (Clause clause : clauseList) {
-      if (!clause.satisfy(proto)) {
+      if (!clause.satisfy(analyzable)) {
         return false;
       }
     }

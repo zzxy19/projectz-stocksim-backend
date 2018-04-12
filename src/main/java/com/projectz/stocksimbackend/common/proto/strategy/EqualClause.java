@@ -1,7 +1,5 @@
 package com.projectz.stocksimbackend.common.proto.strategy;
 
-import com.projectz.stocksimbackend.common.proto.timeseries.TimeSeriesProto;
-
 public class EqualClause extends Clause {
   private Entity left;
   private Entity right;
@@ -12,7 +10,11 @@ public class EqualClause extends Clause {
   }
 
   @Override
-  public boolean satisfy(TimeSeriesProto proto) {
-    return left.evaluate(proto) == right.evaluate(proto);
+  public boolean satisfy(TimeSeriesAnalyzable analyzable) {
+    Float leftValue = left.evaluate(analyzable);
+    Float rightValue = right.evaluate(analyzable);
+    return leftValue != null
+        && rightValue != null
+        && leftValue.equals(rightValue);
   }
 }
