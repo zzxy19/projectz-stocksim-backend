@@ -2,7 +2,7 @@ package com.projectz.stocksimbackend.common.proto.strategy;
 
 import java.util.List;
 
-public class Condition {
+public final class Condition {
   private List<Clause> clauseList;
 
   public Condition(List<Clause> clauses) {

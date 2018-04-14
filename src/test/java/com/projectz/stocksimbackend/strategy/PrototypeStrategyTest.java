@@ -16,7 +16,7 @@ public class PrototypeStrategyTest {
     List<TimeSeriesValue> values = new ArrayList<>();
     // new TimeSeriesValue(DATE, OPEN, HIGH, LOW, CLOSE, VOLUME)
     values.add(new TimeSeriesValue("2018-01-05", 50, 50, 20, 25, 1000));
-    values.add(new TimeSeriesValue("2018-01-04", 30, 60, 20, 50, 2000));
+    values.add(new TimeSeriesValue("2018-01-04", 30, 60, 20, 45, 2000));
     values.add(new TimeSeriesValue("2018-01-03", 50, 60, 20, 30, 100));
     values.add(new TimeSeriesValue("2018-01-02", 80, 80, 40, 50, 200));
     values.add(new TimeSeriesValue("2018-01-01", 100, 120, 80, 80, 4000));
@@ -93,5 +93,27 @@ public class PrototypeStrategyTest {
     Clause priceTodayDropMoreThanHalf =
       new LargerClause(dropHalfFromYesterday, priceAtToday);
     assert(!priceTodayDropMoreThanHalf.satisfy(sampleIntradayAnalyzable));
+  }
+
+  @Test
+  public void testRunner() {
+    Entity priceAtToday = new PriceEntity(0);
+    Entity veryHighPrice = new ConstantEntity(46);
+    Entity priceAtYesterday = new PriceEntity(1);
+    Clause priceHasDropped = new LargerClause(priceAtYesterday, priceAtToday);
+    Clause priceNotTooHigh = new LargerClause(veryHighPrice, priceAtToday);
+    ArrayList<Clause> whatIwant = new ArrayList<>();
+    whatIwant.add(priceHasDropped);
+    whatIwant.add(priceNotTooHigh);
+    Condition buyBuyBuy = new Condition(whatIwant);
+    AccountAction buyAction = new AccountAction(ActionType.BUY, AmountType.SHARE, 10);
+    Rule userRule = new Rule(buyBuyBuy, buyAction);
+
+    float initialBalance = 10000;
+    AccountSummary initialAccount = new AccountSummary(initialBalance);
+    TimeSeriesActionable tradeProcess = new TimeSeriesActionable("MU", initialAccount);
+    do {
+      userRule.evaluate(sampleIntradayAnalyzable, tradeProcess);
+    } while (sampleIntradayAnalyzable.goToNextDay());
   }
 }

@@ -4,7 +4,7 @@ import com.projectz.stocksimbackend.common.proto.timeseries.TimeSeriesValue;
 
 import java.util.List;
 
-public class TimeSeriesAnalyzable {
+public final class TimeSeriesAnalyzable {
   private final String symbol;
   private final List<TimeSeriesValue> values;
   private int currentIndex;
@@ -24,6 +24,15 @@ public class TimeSeriesAnalyzable {
       exhausted = true;
     }
     return !exhausted;
+  }
+
+  public float getCurrentPrice() {
+    try {
+      return getCurrentValue().getClose();
+    } catch (NullPointerException ex) {
+      throw new RuntimeException(
+        "Should not call getCurrentPrice when analyzable is exhausted");
+    }
   }
 
   public TimeSeriesValue getCurrentValue() {
