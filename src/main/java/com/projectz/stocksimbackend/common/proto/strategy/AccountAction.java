@@ -20,6 +20,13 @@ public class AccountAction {
     this.amount = amount;
   }
 
+  private AccountAction(AccountAction other) {
+    this.actionType = other.actionType;
+    this.amountType = other.amountType;
+    this.coefficient = other.coefficient;
+    this.amount = other.amount;
+  }
+
   public ActionType getActionType() {
     return actionType;
   }
@@ -34,5 +41,9 @@ public class AccountAction {
 
   public float getAmount() {
     return amount;
+  }
+
+  public AccountAction snapshot() {
+    return new AccountAction(this);
   }
 }

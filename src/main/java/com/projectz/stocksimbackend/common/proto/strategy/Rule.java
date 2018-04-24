@@ -9,11 +9,12 @@ public final class Rule {
     this.action = action;
   }
 
-  public void evaluate(TimeSeriesAnalyzable analyzable, TimeSeriesActionable actionable) {
+  public boolean evaluate(TimeSeriesAnalyzable analyzable, TimeSeriesActionable actionable) {
     if (condition.satisfy(analyzable)) {
       actionable.executeAction(analyzable, action);
+      return true;
     } else {
-      actionable.noAction(analyzable);
+      return false;
     }
   }
 }

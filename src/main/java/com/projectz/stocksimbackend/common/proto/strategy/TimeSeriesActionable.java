@@ -8,7 +8,7 @@ public final class TimeSeriesActionable {
   private final AccountSummary initialAccountSummary;
 
   private AccountSummary latestAccountSummary;
-  private List<Boolean> actionHistory;
+  private List<AccountAction> actionHistory;
   private List<AccountSummary> accountSummaryHistory;
 
   public TimeSeriesActionable(String symbol, AccountSummary initialAccount) {
@@ -21,17 +21,17 @@ public final class TimeSeriesActionable {
 
   public void noAction(TimeSeriesAnalyzable analyzable) {
     latestAccountSummary.updateProfile(analyzable);
-    actionHistory.add(false);
+    actionHistory.add(null);
     accountSummaryHistory.add(latestAccountSummary.snapshot());
   }
 
   public boolean executeAction(TimeSeriesAnalyzable analyzable, AccountAction action) {
     if (!latestAccountSummary.trade(action, analyzable)) {
-      actionHistory.add(false);
+      actionHistory.add(action.snapshot());
       accountSummaryHistory.add(latestAccountSummary.snapshot());
       return false;
     }
-    actionHistory.add(true);
+    actionHistory.add(action.snapshot());
     accountSummaryHistory.add(latestAccountSummary.snapshot());
     return true;
   }

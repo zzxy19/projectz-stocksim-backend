@@ -1,0 +1,19 @@
+{ "rules": [
+  { "condition":
+    { "clauses": [
+      {"clauseType": "LARGER",
+       "left": { "entityType": "CONSTANT", "value": 10},
+       "right": { "entityType": "PRICE", "amount": 5, "coefficient": 1.0}
+      },
+      {"clauseType": "EQUAL",
+       "left": {
+         "entity": "DIFF",
+         "origin": { "entityType": "CONSTANT", "value": 8 },
+         "subtraction": { "entityType": "CONSTANT", "value": 5}
+       },
+       "right": { "entityType": "CONSTANT", "value": 20}
+      }
+    ]},
+    "action": { "actionType": "BUY", "amountType": "SHARE", "amount": 20 }
+  }
+]}

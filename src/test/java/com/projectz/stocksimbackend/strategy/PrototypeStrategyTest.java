@@ -101,19 +101,28 @@ public class PrototypeStrategyTest {
     Entity veryHighPrice = new ConstantEntity(46);
     Entity priceAtYesterday = new PriceEntity(1);
     Clause priceHasDropped = new LargerClause(priceAtYesterday, priceAtToday);
+    Clause priceHasRised = new LargerClause(priceAtToday, priceAtYesterday);
     Clause priceNotTooHigh = new LargerClause(veryHighPrice, priceAtToday);
     ArrayList<Clause> whatIwant = new ArrayList<>();
     whatIwant.add(priceHasDropped);
     whatIwant.add(priceNotTooHigh);
+    ArrayList<Clause> whatIdontWant = new ArrayList<>();
+    whatIdontWant.add(priceHasRised);
     Condition buyBuyBuy = new Condition(whatIwant);
-    AccountAction buyAction = new AccountAction(ActionType.BUY, AmountType.SHARE, 10);
-    Rule userRule = new Rule(buyBuyBuy, buyAction);
+    Condition sellSellSell = new Condition(whatIdontWant);
+    AccountAction buyAction = new AccountAction(ActionType.BUY, AmountType.SHARE, 20);
+    AccountAction sellAction = new AccountAction(ActionType.SELL, AmountType.SHARE, 19);
+    Rule buyRule = new Rule(buyBuyBuy, buyAction);
+    Rule sellRule = new Rule(sellSellSell, sellAction);
+    Strategy myFirstStrategy = new Strategy();
+    myFirstStrategy.addRule(buyRule);
+    myFirstStrategy.addRule(sellRule);
 
     float initialBalance = 10000;
     AccountSummary initialAccount = new AccountSummary(initialBalance);
     TimeSeriesActionable tradeProcess = new TimeSeriesActionable("MU", initialAccount);
     do {
-      userRule.evaluate(sampleIntradayAnalyzable, tradeProcess);
+      myFirstStrategy.evaluate(sampleIntradayAnalyzable, tradeProcess);
     } while (sampleIntradayAnalyzable.goToNextDay());
   }
 }
