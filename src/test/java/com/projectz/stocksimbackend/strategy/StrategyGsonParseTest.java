@@ -27,7 +27,8 @@ public class StrategyGsonParseTest {
 
   @Test
   public void test() {
-    StrategyInput strategy = readGsonData();
+    StrategyInput strategyInput = readGsonData();
+    Strategy strategy = strategyInput.toStrategy();
     int x = 10;
   }
 }

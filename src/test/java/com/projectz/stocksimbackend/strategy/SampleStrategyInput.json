@@ -7,7 +7,7 @@
       },
       {"clauseType": "EQUAL",
        "left": {
-         "entity": "DIFF",
+         "entityType": "DIFF",
          "origin": { "entityType": "CONSTANT", "value": 8 },
          "subtraction": { "entityType": "CONSTANT", "value": 5}
        },
